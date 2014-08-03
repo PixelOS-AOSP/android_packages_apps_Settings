@@ -97,6 +97,7 @@ import com.android.settings.security.screenlock.AutoPinConfirmPreferenceControll
 import com.android.settings.security.screenlock.LockAfterTimeoutPreferenceController;
 import com.android.settings.security.screenlock.PatternVisiblePreferenceController;
 import com.android.settings.security.screenlock.PinPrivacyPreferenceController;
+import com.android.settings.security.screenlock.PinScramblePreferenceController;
 import com.android.settings.security.screenlock.PowerButtonInstantLockPreferenceController;
 import com.android.settingslib.RestrictedPreference;
 import com.android.settingslib.core.AbstractPreferenceController;
@@ -712,6 +713,8 @@ public class ChooseLockGeneric extends SettingsActivity {
                     getContext(), mUserId, mLockPatternUtils));
             mAutoPinConfirmPreferenceController = new AutoPinConfirmPreferenceController(
                     getContext(), mUserId, mLockPatternUtils, this);
+            mUnlockSettingsControllers.add(new PinScramblePreferenceController(
+                    getContext(), mUserId, mLockPatternUtils));
             mUnlockSettingsControllers.add(mAutoPinConfirmPreferenceController);
         }
 
