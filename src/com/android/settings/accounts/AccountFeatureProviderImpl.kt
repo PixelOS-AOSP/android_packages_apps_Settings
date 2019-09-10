@@ -17,14 +17,19 @@
 package com.android.settings.accounts
 
 import android.accounts.Account
+import android.accounts.AccountManager
 import android.content.Context
 
 class AccountFeatureProviderImpl : AccountFeatureProvider {
     override fun getAccountType(): String? {
-        return null
+        return GOOGLE_ACCOUNT_TYPE
     }
 
     override fun getAccounts(context: Context): Array<Account> {
-        return emptyArray()
+        return AccountManager.get(context).getAccountsByType(GOOGLE_ACCOUNT_TYPE)
+    }
+
+    companion object {
+        private const val GOOGLE_ACCOUNT_TYPE = "com.google"
     }
 }
