@@ -41,7 +41,6 @@ import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyedObserver
 import com.android.settingslib.metadata.BooleanValuePreference
 import com.android.settingslib.metadata.MUSTPASS_SET
-import com.android.settingslib.metadata.MUSTPASS_SET
 import com.android.settingslib.metadata.PreferenceCategory
 import com.android.settingslib.metadata.PreferenceIndexableProvider
 import com.android.settingslib.metadata.PreferenceLifecycleContext
@@ -125,6 +124,7 @@ abstract class BaseDarkModeScreen(context: Context, val isUiOnly: Boolean) :
                         +ExpandedDarkModeSelectorPreference(modeStorage, isUiOnly)
                     }
             }
+            +DarkModeBlackThemePreference(context, darkModeStorage)
             +PreferenceCategory(
                 key = "display_category",
                 purpose = R.string.display_category_purpose,
