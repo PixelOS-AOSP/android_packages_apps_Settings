@@ -111,4 +111,13 @@
         settings:buttonPreferenceSize="normal"
         settings:buttonPreferenceType="tonal"
         settings:controller="com.android.settings.accessibility.ForceInvertSurveyButtonPreferenceController" />
+    
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        android:key="berry_black_theme"
+        android:dependency="dark_ui_activated"
+        android:title="@string/berry_black_theme_title"
+        android:summary="@string/berry_black_theme_summary"
+        android:defaultValue="false"
+        settings:requiresPackage="org.lineageos.overlay.customization.blacktheme" />
+
 </PreferenceScreen>
