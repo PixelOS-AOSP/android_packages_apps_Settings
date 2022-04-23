@@ -237,6 +237,13 @@
         android:fragment="com.android.settings.security.MemtagPage"
         settings:controller="com.android.settings.security.MemtagPagePreferenceController" />
 
+    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+        android:order="92"
+        android:key="window_ignore_secure"
+        android:title="@string/ignore_window_secure_title"
+        android:summary="@string/ignore_window_secure_summary"
+        android:defaultValue="false"/>
+
     <Preference
         android:order="310"
         android:key="binary_transparency_settings"
