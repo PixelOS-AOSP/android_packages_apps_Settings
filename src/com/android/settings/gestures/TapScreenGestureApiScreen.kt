@@ -74,11 +74,34 @@ class TapScreenGestureApiScreen :
                 }
             }
         }
+        preference(
+            key = AMBIENT_SWITCH_KEY,
+            purpose = R.string.doze_gesture_ambient_title,
+            type = AnyBoolean,
+        ) {
+            sensitivityLevel(SensitivityLevel.NO_SENSITIVITY)
+            get {
+                execute {
+                    Secure.getInt(context.contentResolver, AMBIENT_SWITCH_KEY, ON) == ON
+                }
+            }
+            set {
+                permissions(WRITE_SECURE_SETTINGS)
+                execute { value ->
+                    Secure.putInt(
+                        context.contentResolver,
+                        AMBIENT_SWITCH_KEY,
+                        if (value) ON else OFF,
+                    )
+                }
+            }
+        }
     }
 
     companion object {
         const val KEY = "tap_screen_gesture"
         const val MAIN_SWITCH_KEY = "gesture_tap"
+        const val AMBIENT_SWITCH_KEY = "doze_tap_gesture_ambient"
         const val ON = 1
         const val OFF = 0
     }
