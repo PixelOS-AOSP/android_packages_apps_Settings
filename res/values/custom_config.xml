@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Show battery information -->
+    <bool name="config_show_battery_info" translatable="false">true</bool>
+</resources>
