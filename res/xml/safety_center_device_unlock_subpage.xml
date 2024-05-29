@@ -85,4 +85,10 @@
         settings:safetySource="AndroidWearUnlock"
         settings:profile="work_profile" />
 
+    <Preference
+        android:key="duress_password"
+        android:order="1000"
+        android:title="@string/duress_pwd_pref_title"
+        settings:controller="com.android.settings.safetycenter.ui.DuressPasswordPrefController"/>
+
 </PreferenceScreen>

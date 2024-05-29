@@ -41,6 +41,11 @@ class SourceListSubpagePreferenceController(context: Context, preferenceKey: Str
                         SafetySourcePreference.Profile.PERSONAL
                 }
                 .map { it.title }
+                .toMutableList()
+
+        if (preferenceKey == SafetyCenterSubpageRegistry.DEVICE_UNLOCK_SUBPAGE_KEY && mContext.user.isSystem()) {
+            titles += mContext.getText(com.android.settings.R.string.duress_pwd_pref_title)
+        }
 
         if (titles.isEmpty()) {
             return super.getDefaultSubpageSummary(safetySourceEntries)
