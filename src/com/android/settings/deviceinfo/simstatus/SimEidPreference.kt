@@ -23,7 +23,6 @@ import android.telephony.euicc.EuiccManager
 import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.Utils
-import com.android.settings.deviceinfo.PhoneNumberUtil
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.metadata.PersistentPreference
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
@@ -80,7 +79,7 @@ class SimEidPreference(private val context: Context) :
     override fun storage(context: Context): KeyValueStore = createSummaryStorage(context, key)
 
     override fun getSummary(context: Context): CharSequence? =
-        eidMetadata?.let { PhoneNumberUtil.expandByTts(it.eid).toString() }
+        context.getString(R.string.device_info_protected_single_press)
 
     override fun bind(preference: Preference, metadata: PreferenceMetadata) {
         super.bind(preference, metadata)
@@ -88,8 +87,9 @@ class SimEidPreference(private val context: Context) :
     }
 
     override fun onCreate(context: PreferenceLifecycleContext) {
-        context.requirePreference<Preference>(key).onPreferenceClickListener =
-            Preference.OnPreferenceClickListener {
+        val preference = context.requirePreference<Preference>(key)
+        preference.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+                preference.summary = eidMetadata?.eid
                 SimEidDialogFragment.show(
                     context.childFragmentManager,
                     it.title.toString(),
