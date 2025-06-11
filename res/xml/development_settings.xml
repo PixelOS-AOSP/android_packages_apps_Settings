@@ -650,6 +650,12 @@
             android:title="@string/enable_webapp_minter_title"
             android:summary="@string/enable_webapp_minter_summary" />
 
+        <com.android.settings.development.KeyboxDataPreference
+            android:key="keybox_data_setting"
+            android:title="@string/keybox_data_title"
+            android:summary="@string/keybox_data_summary"
+            android:defaultValue=""/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
