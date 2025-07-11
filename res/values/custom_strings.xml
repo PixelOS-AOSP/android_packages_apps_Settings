@@ -324,4 +324,12 @@
     <!-- Status bar Icon Manager -->
     <string name="icon_manager_title">Icon manager</string>
     <string name="icon_manager_summary">Control visibility of status bar icons</string>
+
+    <!-- Keybox spoofing target list -->
+    <string name="hide_bootloader_status_title">Hide unlocked bootloader</string>
+    <string name="hide_bootloader_status_summary">Advertise locked bootloader status to selected apps</string>
+
+    <string name="app_list_search">Search</string>
+    <string name="app_list_search_apps">Search apps</string>
+    <string name="app_list_loading">Loading apps\u2026</string>
 </resources>
