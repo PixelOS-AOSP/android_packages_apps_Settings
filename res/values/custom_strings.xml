@@ -317,4 +317,8 @@
 
     <!-- Radio Info -->
     <string name="radio_info_title">Radio info</string>
+
+    <!-- Keybox spoofing target list -->
+    <string name="hide_bootloader_status_title">Hide unlocked bootloader</string>
+    <string name="hide_bootloader_status_summary">Advertise locked bootloader status to selected apps</string>
 </resources>
