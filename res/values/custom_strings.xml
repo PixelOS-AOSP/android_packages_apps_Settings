@@ -339,4 +339,8 @@
     <!-- Pif Data -->
     <string name="pif_data_title">Configure PIF JSON</string>
     <string name="pif_data_summary">Configure PIF JSON used to spoof properties for GMS and the Play Store. Tap Delete to revert to dynamic defaults.</string>
+
+    <!-- GMS cert chain -->
+    <string name="gms_cert_chain_title">Disable forcing strong integrity</string>
+    <string name="gms_cert_chain_summary">Forcing strong integrity breaks apps like Google Pay, enabling this option fixes such apps.</string>
 </resources>
