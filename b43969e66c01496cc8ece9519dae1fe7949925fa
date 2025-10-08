@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d00f681_455eac69",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000028
+      },
+      "writtenOn": "2025-10-08T18:02:36Z",
+      "side": 1,
+      "message": "I can confirm that UDFPS icon is misalagined and I think the progress circle was missing too but I can\u0027t confirm that It\u0027s fixed after this PS because I don\u0027t have PixelOS 16 source anymore.",
+      "revId": "b43969e66c01496cc8ece9519dae1fe7949925fa",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
