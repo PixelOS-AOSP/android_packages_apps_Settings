@@ -1,4 +1,4 @@
-package com.android.settings.applications;
+package com.android.settings.development;
 
 import android.app.ActivityManager;
 import android.content.Context;
