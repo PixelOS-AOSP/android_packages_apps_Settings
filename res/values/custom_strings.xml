@@ -326,11 +326,11 @@
     <string name="app_list_loading">Loading apps\u2026</string>
 
     <!-- Keybox Data -->
-    <string name="keybox_data_title">Select keybox XML to spoof</string>
-    <string name="keybox_data_summary">Select keybox XML used for key attestation spoofing for all apps system wide. Click the delete button in order to reset the keybox data values used by the system.</string>
+    <string name="keybox_data_title">Configure keybox XML</string>
+    <string name="keybox_data_summary">Configure system-wide key attestation spoofing. Tap Delete to reset to defaults.</string>
 
     <!-- Pif Data -->
-    <string name="pif_data_title">Select PIF JSON to spoof</string>
-    <string name="pif_data_summary">Select PIF JSON used for prop attestation spoofing for google mobile services and play store. Click the delete button in order to reset the PIF data props and use dynamic PIF props which are used by default.</string>
+    <string name="pif_data_title">Configure PIF JSON</string>
+    <string name="pif_data_summary">Configure PIF JSON used to spoof properties for GMS and the Play Store. Tap Delete to revert to dynamic defaults.</string>
 
 </resources>
