@@ -82,7 +82,7 @@ public class RefreshRatePreferenceController extends BasePreferenceController
 
     @Override
     public int getAvailabilityStatus() {
-        return mUtils.isHighRefreshRateAvailable() ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return mUtils.isHighRefreshRateAvailable() && mContext.getResources().getBoolean(R.bool.config_show_smooth_display) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
