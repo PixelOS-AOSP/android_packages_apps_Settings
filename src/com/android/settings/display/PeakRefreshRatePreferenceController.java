@@ -92,7 +92,8 @@ public class PeakRefreshRatePreferenceController extends TogglePreferenceControl
 
     @Override
     public int getAvailabilityStatus() {
-        if (mContext.getResources().getBoolean(R.bool.config_show_smooth_display)) {
+        if (mContext.getResources().getBoolean(R.bool.config_show_smooth_display) &&
+            mContext.getResources().getBoolean(R.bool.config_disable_advanced_refresh_rate)) {
             return mPeakRefreshRate > DEFAULT_REFRESH_RATE ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
         } else {
             return UNSUPPORTED_ON_DEVICE;

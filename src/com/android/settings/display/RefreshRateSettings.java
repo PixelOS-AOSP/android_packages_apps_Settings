@@ -46,12 +46,15 @@ public class RefreshRateSettings extends RadioButtonPickerFragment {
     private Context mContext;
     private RefreshRateUtils mUtils;
     private SwitchPreferenceCompat mVrrSwitchPref;
+    private boolean mDisableAdvancedRefreshRate;
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         mContext = context;
         mUtils = new RefreshRateUtils(context);
+        mDisableAdvancedRefreshRate = context.getResources().getBoolean(
+                R.bool.config_disable_advanced_refresh_rate);
     }
 
     @Override
@@ -66,6 +69,7 @@ public class RefreshRateSettings extends RadioButtonPickerFragment {
         mVrrSwitchPref.setTitle(R.string.refresh_rate_vrr_title);
         mVrrSwitchPref.setSummary(R.string.refresh_rate_vrr_summary);
         mVrrSwitchPref.setOnPreferenceChangeListener((pref, newValue) -> {
+            if (mDisableAdvancedRefreshRate) return false;
             mUtils.setVrrEnabled((Boolean) newValue);
             return true;
         });
@@ -90,7 +94,8 @@ public class RefreshRateSettings extends RadioButtonPickerFragment {
 
     private void updateVrrPref() {
         if (mVrrSwitchPref == null) return;
-        mVrrSwitchPref.setEnabled(mUtils.isVrrPossible());
+        boolean vrrEnabled = mUtils.isVrrPossible() && !mDisableAdvancedRefreshRate;
+        mVrrSwitchPref.setEnabled(vrrEnabled);
         mVrrSwitchPref.setChecked(mUtils.isVrrEnabled());
     }
 
@@ -101,6 +106,7 @@ public class RefreshRateSettings extends RadioButtonPickerFragment {
 
     @Override
     protected boolean setDefaultKey(final String key) {
+        if (mDisableAdvancedRefreshRate) return false;
         final int refreshRate = Integer.parseInt(key);
         mUtils.setCurrentRefreshRate(refreshRate);
         updateVrrPref();
@@ -117,7 +123,7 @@ public class RefreshRateSettings extends RadioButtonPickerFragment {
         private final String mKey;
 
         RefreshRateCandidateInfo(Integer refreshRate) {
-            super(true);
+            super(!mDisableAdvancedRefreshRate);
             mLabel = String.format("%d Hz", refreshRate.intValue());
             mKey = refreshRate.toString();
         }
@@ -142,7 +148,10 @@ public class RefreshRateSettings extends RadioButtonPickerFragment {
             new BaseSearchIndexProvider(R.xml.refresh_rate_settings) {
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {
-                    return new RefreshRateUtils(context).isHighRefreshRateAvailable();
+                    boolean disableRefreshRateSwitch = context.getResources().getBoolean(
+                            R.bool.config_disable_advanced_refresh_rate);
+                    return !disableRefreshRateSwitch &&
+                            new RefreshRateUtils(context).isHighRefreshRateAvailable();
                 }
             };
 }
