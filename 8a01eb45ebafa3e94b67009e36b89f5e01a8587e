@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7986acf6_5eb6d097",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000046
+      },
+      "writtenOn": "2025-12-02T17:35:50Z",
+      "side": 1,
+      "message": "Understood, I kept the commit message the same as the original.",
+      "revId": "8a01eb45ebafa3e94b67009e36b89f5e01a8587e",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
