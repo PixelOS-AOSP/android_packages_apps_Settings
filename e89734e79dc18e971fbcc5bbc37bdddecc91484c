@@ -34,6 +34,24 @@
       "parentUuid": "ef0c5364_296c396a",
       "revId": "e89734e79dc18e971fbcc5bbc37bdddecc91484c",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f59c45c8_dda4cb60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2025-12-06T06:41:57Z",
+      "side": 1,
+      "message": "End user would never be able to fiddle around with the toggle if it\u0027s disabled if I am not wrong.",
+      "parentUuid": "3ff7d5e0_886e51e8",
+      "revId": "e89734e79dc18e971fbcc5bbc37bdddecc91484c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
