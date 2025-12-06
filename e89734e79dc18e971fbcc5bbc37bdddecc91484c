@@ -16,6 +16,24 @@
       "message": "I don\u0027t see a point for this, if we have ro.oem_unlock_supported\u003d0, wouldn\u0027t the toggle be grayed out instead?",
       "revId": "e89734e79dc18e971fbcc5bbc37bdddecc91484c",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ff7d5e0_886e51e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-12-06T06:14:16Z",
+      "side": 1,
+      "message": "if yes, its unset right now (at least on my device)",
+      "parentUuid": "ef0c5364_296c396a",
+      "revId": "e89734e79dc18e971fbcc5bbc37bdddecc91484c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
