@@ -317,7 +317,7 @@ public class ChooseLockPattern extends SettingsActivity {
                             "null chosen pattern in stage 'need to confirm");
                 }
                 try (LockscreenCredential confirmPattern =
-                             LockscreenCredential.createPattern(pattern, patternSize)) {
+                             LockscreenCredential.createPattern(pattern, mPatternSize)) {
                     if (mChosenPattern.equals(confirmPattern)) {
                         updateStage(Stage.ChoiceConfirmed);
                     } else {
@@ -328,7 +328,7 @@ public class ChooseLockPattern extends SettingsActivity {
                 if (pattern.size() < LockPatternUtils.MIN_LOCK_PATTERN_SIZE) {
                     updateStage(Stage.ChoiceTooShort);
                 } else {
-                    mChosenPattern = LockscreenCredential.createPattern(pattern, patternSize);
+                    mChosenPattern = LockscreenCredential.createPattern(pattern, mPatternSize);
                     updateStage(Stage.FirstChoiceValid);
                 }
             } else {

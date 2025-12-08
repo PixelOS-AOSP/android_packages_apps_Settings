@@ -670,7 +670,7 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
 
             mLockPatternView.setEnabled(false);
 
-            final LockscreenCredential credential = LockscreenCredential.createPattern(pattern, patternSize);
+            final LockscreenCredential credential = LockscreenCredential.createPattern(pattern, mPatternSize);
 
             if (mRemoteValidation) {
                 validateGuess(credential);
