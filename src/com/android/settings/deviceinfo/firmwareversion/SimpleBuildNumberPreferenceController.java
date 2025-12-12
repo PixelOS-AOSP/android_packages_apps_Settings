@@ -21,7 +21,6 @@ import android.os.Build;
 import android.text.BidiFormatter;
 
 import com.android.settings.core.BasePreferenceController;
-import com.android.settings.deviceinfo.VersionUtils;
 
 // LINT.IfChange
 public class SimpleBuildNumberPreferenceController extends BasePreferenceController {
@@ -38,14 +37,7 @@ public class SimpleBuildNumberPreferenceController extends BasePreferenceControl
 
     @Override
     public CharSequence getSummary() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
-        String customVersion = VersionUtils.getcustomVersion();
-        if (!customVersion.equals("")){
-            sb.append("\n");
-            sb.append(customVersion);
-        }
-        return sb.toString();
+       return BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY);
     }
 }
 // LINT.ThenChange(SimpleBuildNumberPreference.kt)
