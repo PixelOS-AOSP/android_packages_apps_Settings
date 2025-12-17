@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a85fe501_607155f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2025-12-17T04:35:08Z",
+      "side": 1,
+      "message": "Need to update drawable\u0027s tint",
+      "revId": "daa5e035be74048d67d48832442ab1b46d54a7a5",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
