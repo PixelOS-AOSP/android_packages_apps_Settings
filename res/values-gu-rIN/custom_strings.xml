@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-2025 PixelOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Advanced keyboard settings -->
+    <string name="keyboard_extras_title">Extras</string>
+    <string name="advanced_keyboard_settings_title">Advanced settings</string>
+    <!-- Android debugging as root -->
+    <string name="adb_enable_root">ડીબગ મોડમાં રૂટ કર્યું</string>
+    <string name="adb_enable_summary_root">રૂટ મોડમાં એન્ડ્રોઇડ ડીબગીંગ ચલાવવા પરવાનગી આપો</string>
+    <!-- Hotspot extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Use VPN for connected devices</string>
+    <string name="tethering_allow_vpn_upstreams_summary">When this device is using a VPN, all devices connected to the hotspot will use the same VPN</string>
+    <!-- Location settings screen, setting check box label if Assisted GPS should be enabled -->
+    <string name="assisted_gps">સહાયિત GPSનો ઉપયોગ કરો</string>
+    <!-- Location settings screen, setting summary for Assisted GPS switch -->
+    <string name="assisted_gps_summary">ઇન્ટરનેટ પરથી સેટેલાઇટ સહાય ડેટા ડાઉનલોડ કરો જે GPS સ્ટાર્ટઅપ કામગીરીમાં ઘણો સુધારો કરી શકે છે. કટોકટી કૉલ્સ માટે, સહાયિત GPS હંમેશા માન્ય છે.</string>
+    <!-- Battery Info: Technology -->
+    <string name="battery_technology">તકનીક</string>
+    <!-- Battery Info: Health -->
+    <string name="battery_health">સ્વાસ્થ્ય</string>
+    <string name="battery_health_good">સારું</string>
+    <string name="battery_health_overheat">અતિશય ગરમી</string>
+    <string name="battery_health_dead">મૃત</string>
+    <string name="battery_health_over_voltage">ઓવરવોલ્ટેજ</string>
+    <string name="battery_health_unspecified_failure">અનિશ્ચિત નિષ્ફળતા</string>
+    <string name="battery_health_cold">ઠંડુ</string>
+    <string name="battery_health_unknown">Unknown</string>
+    <!-- Battery Info: Temperature -->
+    <string name="battery_temperature">તાપમાન</string>
+    <!-- Battery Info: Voltage -->
+    <string name="battery_voltage">વોલ્ટેજ</string>
+    <!-- Battery Info: Charge Counter -->
+    <string name="battery_charge_counter_summary">%1$d mAh</string>
+    <!-- Battery Info: Design Capacity -->
+    <string name="battery_design_capacity">ડિઝાઇન ક્ષમતા</string>
+    <string name="battery_design_capacity_summary">%1$d mAh</string>
+    <!-- Battery Info: Maximum Capacity -->
+    <string name="battery_maximum_capacity">મહત્તમ ક્ષમતા</string>
+    <string name="battery_maximum_capacity_summary">%1$d mAh (%2$d%%)</string>
+    <!-- Warning message for the sd card setup -->
+    <string name="storage_warning_internal">ચેતવણી: આ વિકલ્પ યોગ્ય રીતે કામ ન કરી શકે અથવા ડેટા ગુમાવવાનું કારણ બની શકે છે અને તેથી તેની ભલામણ કરવામાં આવતી નથી!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
+    <string name="show_dev_countdown_cm">{count, plural,
+      =1      {You are now # step away from enabling development settings.}
+      other   {You are now # steps away from enabling development settings.}
+    }</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
+    <string name="show_dev_on_cm">You have enabled development settings!</string>
+    <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
+    <string name="show_dev_already_cm">No need, you have already enabled development settings.</string>
+    <!-- Copy to clipboard -->
+    <string name="copied_to_clipboard">ક્લિપબોર્ડ પર કૉપિ કરવામાં આવ્યું</string>
+    <string name="longpress_to_clipboard">કૉપિ કરવા માટે લાંબા સમય સુધી દબાવી રાખો</string>
+    <!-- Radio Info -->
+    <string name="radio_info_title">રેડિયો માહિતી</string>
+    <!-- Heads-up -->
+    <string name="heads_up_notifications_enabled_title">Heads-up</string>
+    <string name="heads_up_notifications_enabled_summary">Display priority notifications in a small floating window</string>
+    <!-- Black theme for dark mode -->
+    <string name="berry_black_theme_title">શુદ્ધ કાળો</string>
+    <string name="berry_black_theme_summary">ડાર્ક થીમ માટે શુદ્ધ કાળું બેકગ્રાઉન્ડ</string>
+    <!-- LiveDisplay -->
+    <string name="live_display_summary">વાંચનક્ષમતા સુધારવા અને આંખોનો તાણ ઓછો કરવા માટે દિવસના સમય અને આસપાસની પરિસ્થિતિઓના આધારે તમારી સ્ક્રીનને ઑપ્ટિમાઇઝ કરો</string>
+    <string name="live_display_mode">ડિસ્પ્લે મોડ</string>
+    <string name="live_display_color_temperature_title">રંગ તાપમાન</string>
+    <string name="live_display_color_temperature_summary">Day: <xliff:g id="day_temperature">%1$d</xliff:g>K  Night: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">દિવસ</string>
+    <string name="live_display_night">રાત્રી</string>
+    <string name="live_display_outdoor_mode_title">સ્વચાલિત આઉટડોર મોડ</string>
+    <string name="live_display_outdoor_mode_summary">તેજસ્વી સૂર્યપ્રકાશ હેઠળ આપમેળે તેજ અને સંતૃપ્તિ વધારો</string>
+    <string name="live_display_anti_flicker_title">એન્ટી ફ્લિકર</string>
+    <string name="live_display_anti_flicker_summary">ઓછા પ્રકાશની સ્થિતિમાં વ્યાપક ઝબકારો અટકાવો અને આંખો પરનો ભાર ઓછો કરો. તે રંગની ચોકસાઈ ઘટાડી શકે છે અને કેટલીક વસ્તુઓ પ્રદર્શિત કરવાની રીતને અસર કરી શકે છે.</string>
+    <string name="live_display_low_power_title">પાવર વપરાશ ઘટાડો</string>
+    <string name="live_display_low_power_summary">ડિગ્રેડેશન વિના ઓછામાં ઓછા પાવર વપરાશ માટે ડિસ્પ્લેને સમાયોજિત કરો</string>
+    <string name="live_display_enhance_color_title">રંગોમાં વધારો</string>
+    <string name="live_display_enhance_color_summary">ફ્લેશના ટોન, દૃશ્યાવલિ અને અન્ય છબીઓના રંગ વાઇબ્રન્સમાં સુધારો કરો</string>
+    <string name="live_display_color_profile_title">રંગ પ્રોફાઈલ</string>
+    <string name="live_display_color_profile_standard_title">સ્ટાન્ડર્ડ</string>
+    <string name="live_display_color_profile_standard_summary">ચોક્કસ રંગો અને તેજસ્વી સફેદ</string>
+    <string name="live_display_color_profile_natural_title">નેચરલ</string>
+    <string name="live_display_color_profile_natural_summary">વાસ્તવિક રંગો અને ફ્લેશ ટોન્સ</string>
+    <string name="live_display_color_profile_dynamic_title">ડાયનેમિક</string>
+    <string name="live_display_color_profile_dynamic_summary">વધારેલા રંગો અને તેજસ્વી સફેદ</string>
+    <string name="live_display_color_profile_cinema_title">સિનેમા</string>
+    <string name="live_display_color_profile_cinema_summary">વિડિઓ માટે પરફેક્ટ કલર રિપ્રોડક્શન</string>
+    <string name="live_display_color_profile_astronomy_title">ખગોળશાસ્ત્ર</string>
+    <string name="live_display_color_profile_astronomy_summary">નાઈટ વિઝન જાળવવા માટે ઘેરો લાલ</string>
+    <string name="live_display_color_profile_photography_title">ફોટોગ્રાફી</string>
+    <string name="live_display_color_profile_photography_summary">ફોટા માટે પરફેક્ટ કલર રિપ્રોડક્શન</string>
+    <string name="live_display_color_profile_basic_title">Basic</string>
+    <string name="live_display_color_profile_basic_summary">ડિસ્પ્લે અનકેલિબ્રેટેડ વાપરો</string>
+    <string name="live_display_color_profile_adaptive_title">અનુકૂલનશીલ</string>
+    <string name="live_display_color_profile_adaptive_summary">રંગો આસપાસની પરિસ્થિતિઓને અનુરૂપ બને છે</string>
+    <string name="live_display_color_profile_reading_title">વાંચન</string>
+    <string name="live_display_color_profile_reading_summary">આંખો પર ઓછો તાણ લાવવા માટે ગરમ રંગો</string>
+    <string name="live_display_color_profile_srgb_title">sRGB</string>
+    <string name="live_display_color_profile_srgb_summary">sRGB કલર સ્પેસ માટે સચોટ રંગો</string>
+    <string name="live_display_color_profile_dci_p3_title">DCI-P3</string>
+    <string name="live_display_color_profile_dci_p3_summary">DCI-P3 કલર સ્પેસ માટે સચોટ રંગો</string>
+    <string name="live_display_reading_mode_title">વાંચન મોડ</string>
+    <string name="live_display_reading_mode_summary">લાંબા ગાળાના વાંચન માટે ગ્રેસ્કેલ મોડ</string>
+    <string name="color_calibration_title">રંગ માપાંકન</string>
+    <string name="color_calibration_summary">સ્ક્રીન પરના રંગોને માપાંકિત કરો</string>
+    <string name="color_red_title">લાલ</string>
+    <string name="color_green_title">લીલો</string>
+    <string name="color_blue_title">ભુરો</string>
+    <!-- LiveDisplay : Picture Adjustment -->
+    <string name="picture_adjustment_title">ચિત્ર ગોઠવણ</string>
+    <string name="picture_adjustment_summary">રંગ, સંતૃપ્તિ, તીવ્રતા અને કોન્ટ્રાસ્ટને સમાયોજિત કરો</string>
+    <string name="adj_hue_title">રંગ</string>
+    <string name="adj_saturation_title">સંતૃપ્તિ</string>
+    <string name="adj_intensity_title">તીવ્રતા</string>
+    <string name="adj_contrast_title">કોન્ટ્રાસ્ટ</string>
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">ઉચ્ચ સ્પર્શ સંવેદનશીલતા</string>
+    <string name="high_touch_sensitivity_summary">ટચસ્ક્રીન સંવેદનશીલતા વધારો જેથી મોજા પહેરતી વખતે તેનો ઉપયોગ કરી શકાય</string>
+    <!-- Touchscreen hovering -->
+    <string name="touchscreen_hovering_title">ટચસ્ક્રીન હોવરિંગ</string>
+    <string name="touchscreen_hovering_summary">વેબ બ્રાઉઝર્સ, રિમોટ ડેસ્કટોપ વગેરેમાં તમને માઉસની જેમ સ્ક્રીનને હૉવર કરવાની મંજૂરી આપે છે</string>
+    <!-- High touch polling rate -->
+    <string name="high_touch_polling_rate_title">ઉચ્ચ સ્પર્શ મતદાન દર</string>
+    <string name="high_touch_polling_rate_summary">ટચસ્ક્રીન મતદાન દર વધારો</string>
+    <!-- Charging control settings -->
+    <string name="charging_control_title">ચાર્જીંગ નિયંત્રણ</string>
+    <string name="charging_control_summary">બેટરી માટે ચાર્જિંગ શેડ્યૂલ અને મર્યાદા કસ્ટમાઇઝ કરો</string>
+    <string name="charging_control_enable_title">ચાર્જિંગ નિયંત્રણ સક્ષમ કરો</string>
+    <string name="charging_control_mode_title">ચાર્જિંગ મોડ</string>
+    <string name="charging_control_mode_auto_title">ઓટોમેટિક શેડ્યૂલ</string>
+    <string name="charging_control_mode_auto_summary">સેટ કરેલા એલાર્મના આધારે ચાર્જિંગ ક્યારે શરૂ કરવું તે આપમેળે નક્કી કરો</string>
+    <string name="charging_control_mode_custom_title">કસ્ટમ શેડ્યૂલ</string>
+    <string name="charging_control_mode_custom_summary">પૂર્ણ ચાર્જ થવા માટે લક્ષ્ય સમય સેટ કરો</string>
+    <string name="charging_control_mode_limit_title">ચાર્જિંગ મર્યાદા</string>
+    <string name="charging_control_mode_limit_summary">ચાર્જિંગને ચોક્કસ ટકાવારી સુધી મર્યાદિત કરો</string>
+    <string name="charging_control_start_time_title">શરૂ સમય</string>
+    <string name="charging_control_start_time_summary">%s પછી ચાર્જ કરવાનું શરૂ કરો છો ત્યારે ચાર્જિંગ નિયંત્રણ સક્રિય થાય છે</string>
+    <string name="charging_control_target_time_title">પૂર્ણ ચાર્જ થવા માટેનો લક્ષ્ય સમય</string>
+    <string name="charging_control_target_time_summary">બેટરી %s સુધીમાં સંપૂર્ણપણે ચાર્જ થશે</string>
+    <string name="charging_control_limit_title">મર્યાદા</string>
+    <string name="reset">રીસેટ</string>
+    <!-- Message shown in fingerprint enrollment dialog to locate the sensor -->
+    <string name="fingerprint_enroll_find_sensor_message_front" product="tablet">Locate the fingerprint sensor on the front of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="device">Locate the fingerprint sensor on the front of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="tablet">Locate the fingerprint sensor on the back of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="device">Locate the fingerprint sensor on the back of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_rear" product="default">Locate the fingerprint sensor on the back of your phone.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="tablet">Locate the fingerprint sensor on the side of your tablet.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="device">Locate the fingerprint sensor on the side of your device.</string>
+    <string name="fingerprint_enroll_find_sensor_message_side" product="default">Locate the fingerprint sensor on the side of your phone.</string>
+    <!-- Message shown when user touches the icon on the screen, instead of the real fingerprint sensor -->
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="tablet">Touch the sensor on the front of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="device">Touch the sensor on the front of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_front" product="default">Touch the sensor on the front of your phone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="tablet">Touch the sensor on the back of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="device">Touch the sensor on the back of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_rear" product="default">Touch the sensor on the back of your phone.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="tablet">Touch the sensor on the side of your tablet.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="device">Touch the sensor on the side of your device.</string>
+    <string name="fingerprint_enroll_touch_dialog_message_side" product="default">Touch the sensor on the side of your phone.</string>
+    <!-- Lock screen pattern size -->
+    <string name="lock_settings_picker_pattern_size_message">Choose a pattern size</string>
+    <!-- Whether a visible red line will be drawn after the user has drawn the unlock pattern incorrectly -->
+    <string name="lockpattern_settings_enable_error_path_title">Show pattern error</string>
+    <!-- Whether the dots will be drawn when using the lockscreen pattern -->
+    <string name="lockpattern_settings_enable_dots_title">Show pattern dots</string>
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation settings</string>
+    <string name="display_rotation_enabled">Auto-rotation is enabled</string>
+    <string name="display_rotation_disabled">Auto-rotation is disabled</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+    <!-- One shot automatic brightness -->
+    <string name="auto_brightness_one_shot_title">One shot auto-brightness</string>
+    <string name="auto_brightness_one_shot_summary">Brightness adjustment will only occur at the moment the screen is turned on</string>
+    <!-- PIN scramble -->
+    <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
+    <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
+    <!-- Smart 5G -->
+    <string name="smart_5g_title">Smart 5G</string>
+    <string name="smart_5g_summary">Automatically switch between 5G and 4G to reduce battery consumption</string>
+    <!-- Power menu on secure lockscreen -->
+    <string name="lockscreen_enable_power_menu_title">Power menu</string>
+    <string name="lockscreen_enable_power_menu_summary">Allow accessing power menu on secure lockscreen</string>
+    <!-- Volume button music control -->
+    <string name="volume_button_music_control_title">Playback control</string>
+    <string name="volume_button_music_control_summary">When the screen is off, long-pressing volume keys will skip music tracks</string>
+    <!-- Cycle through ringer modes gesture -->
+    <string name="prevent_ringing_option_cycle">મોડ્સ દ્વારા ચક્ર</string>
+    <string name="prevent_ringing_option_cycle_summary">શરૂ (સાયકલ થ્રો મોડ્સ)</string>
+    <!-- Wake on plug -->
+    <string name="wake_when_plugged_or_unplugged_title">Wake on plug</string>
+    <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">Remove screenshot and screenrecord limits for all apps. This can be convenient in some cases but may lead to privacy leaks.</string>
+    <!-- Incall vibrate options -->
+    <string name="incall_vibration_category">In-call vibration options</string>
+    <string name="incall_vibrate_connect_title">Vibrate on connect</string>
+    <string name="incall_vibrate_call_wait_title">Vibrate on call waiting</string>
+    <string name="incall_vibrate_disconnect_title">Vibrate on disconnect</string>
+    <!-- Ambient wake toggles -->
+    <string name="doze_gesture_ambient_title">Show Ambient</string>
+    <string name="doze_gesture_ambient_summary">Show Ambient Display instead of fully waking the screen up</string>
+    <string name="gesture_wake_ambient">Show Ambient</string>
+    <string name="gesture_wake">Fully wake</string>
+    <!-- Doze enablement -->
+    <string name="doze_enabled_title">Ambient display</string>
+    <string name="doze_enabled_summary">Whether to enable the doze package functionality</string>
+    <!-- Double tap to sleep on status bar or lockscreen -->
+    <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Double-tap on the status bar or lockscreen to turn off the display</string>
+    <!-- Refresh rate -->
+    <string name="refresh_rate_title">રિફ્રેશ રેટ</string>
+    <string name="refresh_rate_summary_vrr_off">%d Hz</string>
+    <string name="refresh_rate_summary_vrr_on">%d Hz (અનુકૂલનશીલ)</string>
+    <string name="refresh_rate_vrr_title">અનુકૂલનશીલ રિફ્રેશ રેટ</string>
+    <string name="refresh_rate_vrr_summary">પાવર બચાવવા માટે, જ્યારે ડિસ્પ્લે નિષ્ક્રિય હોય ત્યારે રિફ્રેશ રેટ આપમેળે ઘટાડો. ક્યારેક ડિસ્પ્લે ઝબકવી અથવા રંગ બદલાઈ શકે છે</string>
+    <string name="refresh_rate_footer">ઊંચો રિફ્રેશ રેટ ડિસ્પ્લેને સરળ બનાવે છે, પરંતુ પાવર વપરાશમાં વધારો કરે છે</string>
+    <string name="keywords_refresh_rate">refresh, rate, smooth, peak, 60hz, 90hz, 120hz, 144hz, 165hz</string>
+    <!-- Battery saver refresh rate -->
+    <string name="battery_saver_refresh_rate_title">રિફ્રેશ રેટ ઘટાડો</string>
+    <string name="battery_saver_refresh_rate_summary">બેટરી સેવર ચાલુ હોય ત્યારે પાવર બચાવવા માટે 60 Hz સ્ક્રીન રિફ્રેશ રેટનો ઉપયોગ કરો</string>
+    <!-- Preference and settings suggestion title text for screen off UDFPS [CHAR LIMIT=60]-->
+    <string name="ambient_display_screen_off_udfps_title">Always on Fingerprint</string>
+    <!-- Summary text for screen off UDFPS [CHAR LIMIT=NONE]-->
+    <string name="ambient_display_screen_off_udfps_summary">Allows unlocking with the screen off.\nEnabling may cause accidental wake-ups.</string>
+    <!-- Hotspot -->
+    <string name="wifi_hotspot_hidden_ssid_title">Hidden network</string>
+    <string name="wifi_hotspot_hidden_ssid_summary">Your mobile hotspot\'s name won\'t appear in the list of available WLAN networks.</string>
+    <string name="wifi_hotspot_client_manager_title">Connected devices</string>
+    <string name="wifi_hotspot_client_manager_summary">List and manage devices connected to the hotspot</string>
+    <string name="wifi_hotspot_client_manager_list_only_summary">List devices connected to the hotspot</string>
+    <string name="wifi_hotspot_client_limit_title">Limit of connected devices</string>
+    <string name="wifi_hotspot_blocked_clients_list_title">Blocked Devices</string>
+    <string name="wifi_hotspot_connected_clients_list_title">Connected Devices</string>
+    <string name="wifi_hotspot_block_client_dialog_title">Block device</string>
+    <string name="wifi_hotspot_block_client_dialog_text">This action will disconnect \"<xliff:g id="device_name">%1$s</xliff:g>\" from this device and add it to blocklist</string>
+    <string name="wifi_hotspot_unblock_client_dialog_title">Unblock device</string>
+    <string name="wifi_hotspot_unblock_client_dialog_text">The device \"<xliff:g id="device_name">%1$s</xliff:g>\" will be able to connect to this hotspot</string>
+    <string name="wifi_hotspot_client_manager_footer_text">No clients are currently available. Connected and blocked devices will be listed here when available.</string>
+    <!-- Status bar Icon Manager -->
+    <string name="icon_manager_title">Icon manager</string>
+    <string name="icon_manager_summary">Control visibility of status bar icons</string>
+    <!-- Notch: Full screen apps -->
+    <string name="display_cutout_force_fullscreen_title">Full screen apps</string>
+    <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
+    <string name="app_list_search">Search</string>
+    <string name="app_list_search_apps">Search apps</string>
+    <string name="app_list_loading">Loading apps\u2026</string>
+    <!-- Keybox Data -->
+    <string name="keybox_data_title">Configure keybox XML</string>
+    <string name="keybox_data_summary">Configure system-wide key attestation spoofing. Tap Delete to reset to defaults.</string>
+    <!-- Pif Data -->
+    <string name="pif_data_title">Configure PIF JSON</string>
+    <string name="pif_data_summary">Configure PIF JSON used to spoof properties for GMS and the Play Store. Tap Delete to revert to dynamic defaults.</string>
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
+    <!-- Global Actions -->
+    <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
+    <string name="global_actions_advanced_reboot_summary">Show options for recovery and bootloader in power menu</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+    <!-- Torch Power button gestures -->
+    <string name="power_button_torch_title">Quick torch</string>
+    <string name="power_button_torch_summary">When the screen is off, long-pressing power button will enable torch</string>
+    <!-- Status bar - Network Traffic -->
+    <string name="network_traffic_settings_title">Network traffic monitor</string>
+    <string name="network_traffic_settings_summary">Show current network traffic levels in the status bar</string>
+    <string name="network_traffic_mode_title">ડિસ્પ્લે મોડ</string>
+    <string name="network_traffic_mode_disable">Disabled</string>
+    <string name="network_traffic_mode_up">Upload only</string>
+    <string name="network_traffic_mode_down">Download only</string>
+    <string name="network_traffic_mode_all">Upload and download</string>
+    <string name="network_traffic_autohide">Auto hide</string>
+    <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
+    <string name="network_traffic_units_title">Traffic measurement units</string>
+    <string name="network_traffic_units_kilobits">Kilobits per second (kb/s)</string>
+    <string name="network_traffic_units_megabits">Megabits per second (Mb/s)</string>
+    <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
+    <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
+    <string name="network_traffic_units_auto">Automatic (kB/s or MB/s)</string>
+</resources>
