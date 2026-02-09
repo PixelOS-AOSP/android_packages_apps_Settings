@@ -114,7 +114,7 @@
             android:title="@string/icon_manager_title"
             android:summary="@string/icon_manager_summary">
             <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
-
+        </Preference>
     </PreferenceCategory>
 
     <PreferenceCategory
