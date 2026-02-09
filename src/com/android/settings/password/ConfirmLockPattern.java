@@ -627,7 +627,7 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
                         + " for next button");
             }
             if (mInputMode == InputMode.Click && mInputPattern != null) {
-                verifyPattern(mInputPattern);
+                verifyPattern(mInputPattern, mPatternSize);
             }
         }
 
@@ -658,12 +658,12 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
                         mInputMode = inputMode;
                         mInputPattern = pattern;
                         if (inputMode != InputMode.Click) {
-                            verifyPattern(pattern);
+                            verifyPattern(pattern, patternSize);
                         }
                     }
                 };
 
-        private void verifyPattern(List<LockPatternView.Cell> pattern) {
+        private void verifyPattern(List<LockPatternView.Cell> pattern, byte patternSize) {
             if (mPendingLockCheck != null || mDisappearing) {
                 return;
             }

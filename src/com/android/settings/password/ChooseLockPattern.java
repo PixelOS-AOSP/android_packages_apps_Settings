@@ -299,7 +299,7 @@ public class ChooseLockPattern extends SettingsActivity {
                         mInputMode = inputMode;
                         mInputPattern = pattern;
                         if (inputMode != InputMode.Click) {
-                            verifyPattern(pattern);
+                            verifyPattern(pattern, patternSize);
                         }
                     }
 
@@ -310,7 +310,7 @@ public class ChooseLockPattern extends SettingsActivity {
                     }
                 };
 
-        private void verifyPattern(List<LockPatternView.Cell> pattern) {
+        private void verifyPattern(List<LockPatternView.Cell> pattern, byte patternSize) {
             if (mUiStage == Stage.NeedToConfirm || mUiStage == Stage.ConfirmWrong) {
                 if (mChosenPattern == null) {
                     throw new IllegalStateException(
@@ -758,7 +758,7 @@ public class ChooseLockPattern extends SettingsActivity {
                             + " when button is " + RightButtonMode.Continue);
                 }
                 if (mInputMode == InputMode.Click && mInputPattern != null) {
-                    verifyPattern(mInputPattern);
+                    verifyPattern(mInputPattern, mPatternSize);
                 }
             } else if (mUiStage.rightMode == RightButtonMode.Continue) {
                 if (mUiStage != Stage.FirstChoiceValid) {
@@ -774,7 +774,7 @@ public class ChooseLockPattern extends SettingsActivity {
                             + RightButtonMode.Confirm);
                 }
                 if (mInputMode == InputMode.Click && mInputPattern != null) {
-                    verifyPattern(mInputPattern);
+                    verifyPattern(mInputPattern, mPatternSize);
                 }
             } else if (mUiStage.rightMode == RightButtonMode.Confirm) {
                 if (mUiStage != Stage.ChoiceConfirmed) {
