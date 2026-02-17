@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a1cb831_844f9d40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-02-17T17:59:48Z",
+      "side": 1,
+      "message": "Tested and checked, works fine. Fixes the intended crash.",
+      "revId": "da4dcc66b3acb712a77c655a8b7654daff0b62f2",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
