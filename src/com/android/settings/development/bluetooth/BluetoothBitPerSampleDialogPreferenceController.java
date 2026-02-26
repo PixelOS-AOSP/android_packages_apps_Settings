@@ -61,8 +61,14 @@ public class BluetoothBitPerSampleDialogPreferenceController extends
             case 0:
                 final BluetoothCodecConfig currentConfig = getCurrentCodecConfig();
                 if (currentConfig != null) {
-                    bitsPerSampleValue = getHighestBitsPerSample(getSelectableByCodecType(
-                            currentConfig.getCodecType()));
+                    /* Savitech LHDC: pick default by native decision instead of the highest one */
+                    if (currentConfig.getCodecType() != BluetoothCodecConfig.SOURCE_CODEC_TYPE_LHDCV3 &&
+                       currentConfig.getCodecType() != BluetoothCodecConfig.SOURCE_CODEC_TYPE_LHDCV5) {
+                        bitsPerSampleValue = getHighestBitsPerSample(getSelectableByCodecType(
+                                currentConfig.getCodecType()));
+                    } else {
+                        bitsPerSampleValue = BluetoothCodecConfig.BITS_PER_SAMPLE_NONE;
+                    }
                 }
                 break;
             case 1:

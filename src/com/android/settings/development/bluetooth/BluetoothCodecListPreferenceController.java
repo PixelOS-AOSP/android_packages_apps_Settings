@@ -251,6 +251,11 @@ public class BluetoothCodecListPreferenceController extends AbstractBluetoothPre
 
         mBluetoothA2dpConfigStore.setCodecType(selectedCodecType);
         mBluetoothA2dpConfigStore.setCodecPriority(BluetoothCodecConfig.CODEC_PRIORITY_HIGHEST);
+        // Savitech patch - Start (use the codec's native policy)
+        mBluetoothA2dpConfigStore.setSampleRate(BluetoothCodecConfig.SAMPLE_RATE_NONE);
+        mBluetoothA2dpConfigStore.setBitsPerSample(BluetoothCodecConfig.BITS_PER_SAMPLE_NONE);
+        mBluetoothA2dpConfigStore.setChannelMode(BluetoothCodecConfig.CHANNEL_MODE_NONE);
+        /*
         mBluetoothA2dpConfigStore.setSampleRate(
                 AbstractBluetoothDialogPreferenceController.getHighestSampleRate(
                         selectedCodecConfig));
@@ -260,6 +265,8 @@ public class BluetoothCodecListPreferenceController extends AbstractBluetoothPre
         mBluetoothA2dpConfigStore.setChannelMode(
                 AbstractBluetoothDialogPreferenceController.getHighestChannelMode(
                         selectedCodecConfig));
+        */
+        // Savitech patch - End
         return true;
     }
 

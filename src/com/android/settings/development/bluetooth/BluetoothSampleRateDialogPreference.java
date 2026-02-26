@@ -61,6 +61,7 @@ public class BluetoothSampleRateDialogPreference extends BaseBluetoothDialogPref
         mRadioButtonIds.add(R.id.bluetooth_audio_sample_rate_480);
         mRadioButtonIds.add(R.id.bluetooth_audio_sample_rate_882);
         mRadioButtonIds.add(R.id.bluetooth_audio_sample_rate_960);
+        mRadioButtonIds.add(R.id.bluetooth_audio_sample_rate_1920);
         String[] stringArray = context.getResources().getStringArray(
                 com.android.settingslib.R.array.bluetooth_a2dp_codec_sample_rate_titles);
         for (int i = 0; i < stringArray.length; i++) {
