@@ -2564,6 +2564,10 @@
     <string name="wifi_privacy_mac_settings">MAC</string>
     <!-- Category title for Device name [CHAR LIMIT=25] -->
     <string name="wifi_privacy_device_name_settings">Device name</string>
+    <!-- Label for optional custom randomized MAC address input [CHAR LIMIT=35] -->
+    <string name="wifi_privacy_custom_mac_settings">Custom randomized MAC address</string>
+    <!-- Hint for optional custom randomized MAC address input [CHAR LIMIT=35] -->
+    <string name="wifi_privacy_custom_mac_hint">Leave blank to auto-generate</string>
     <!-- Toggle button title for allowing/disallowing sending device name to DHCP [CHAR LIMIT=50] -->
     <string name="wifi_privacy_send_device_name_toggle_title">Send device name</string>
     <!-- Toggle button title for allowing/disallowing sending device name to DHCP [CHAR LIMIT=50] -->
