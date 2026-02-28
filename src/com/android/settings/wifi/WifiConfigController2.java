@@ -215,6 +215,7 @@ public class WifiConfigController2 implements TextWatcher,
     private Spinner mPrivacySettingsSpinner;
     @Nullable
     private Spinner mDhcpSettingsSpinner;
+    private TextView mCustomMacAddressView;
     private TextView mHiddenWarningView;
     private TextView mProxyHostView;
     private TextView mProxyPortView;
@@ -338,10 +339,13 @@ public class WifiConfigController2 implements TextWatcher,
         if (!mHideMeteredAndPrivacy && mWifiManager.isConnectedMacRandomizationSupported()) {
             mPrivacySettingsSpinner = mView.findViewById(R.id.privacy_settings);
             mPrivacySettingsSpinner.setAdapter(getSpinnerAdapter(R.array.wifi_privacy_entries));
+            mPrivacySettingsSpinner.setOnItemSelectedListener(this);
             if (Flags.androidVWifiApi()) {
                 mDhcpSettingsSpinner = mView.findViewById(R.id.dhcp_settings);
                 mDhcpSettingsSpinner.setAdapter(getSpinnerAdapter(R.array.wifi_dhcp_entries));
             }
+            mCustomMacAddressView = mView.findViewById(R.id.custom_mac_address);
+            mCustomMacAddressView.addTextChangedListener(this);
             mView.findViewById(R.id.privacy_settings_fields).setVisibility(View.VISIBLE);
         }
         mHiddenSettingsSpinner.setOnItemSelectedListener(this);
@@ -399,6 +403,8 @@ public class WifiConfigController2 implements TextWatcher,
                     final int prefMacValue = WifiPrivacyPreferenceController2
                             .translateWifiEntryPrivacyToPrefValue(mWifiEntry.getPrivacy());
                     mPrivacySettingsSpinner.setSelection(prefMacValue);
+                    mCustomMacAddressView.setText(
+                            WifiUtils.getCustomMacAddressForRandomization(config));
                 }
 
                 if (mDhcpSettingsSpinner != null) {
@@ -515,6 +521,7 @@ public class WifiConfigController2 implements TextWatcher,
             mSsidScanButton.setVisibility(View.GONE);
         }
         mSharedCheckBox.setVisibility(View.GONE);
+        updateCustomMacAddressFieldVisibility();
 
         mConfigUi.setCancelButton(res.getString(R.string.wifi_cancel));
         if (mConfigUi.getSubmitButton() != null) {
@@ -594,7 +601,34 @@ public class WifiConfigController2 implements TextWatcher,
             // configuration.
             enabled = false;
         }
+        if (!isCustomMacAddressValidForRandomization()) {
+            enabled = false;
+        }
         return enabled;
+    }
+
+    private void updateCustomMacAddressFieldVisibility() {
+        if (mCustomMacAddressView == null || mPrivacySettingsSpinner == null) {
+            return;
+        }
+        final boolean show = mPrivacySettingsSpinner.getSelectedItemPosition()
+                == WifiPrivacyPreferenceController2.translateWifiEntryPrivacyToPrefValue(
+                WifiEntry.PRIVACY_RANDOMIZED_MAC);
+        mView.findViewById(R.id.custom_mac_address_title)
+                .setVisibility(show ? View.VISIBLE : View.GONE);
+        mCustomMacAddressView.setVisibility(show ? View.VISIBLE : View.GONE);
+        mCustomMacAddressView.setEnabled(show && mIsNetworkEditable);
+    }
+
+    private boolean isCustomMacAddressValidForRandomization() {
+        if (mCustomMacAddressView == null || mPrivacySettingsSpinner == null
+                || mPrivacySettingsSpinner.getSelectedItemPosition()
+                != WifiPrivacyPreferenceController2.translateWifiEntryPrivacyToPrefValue(
+                WifiEntry.PRIVACY_RANDOMIZED_MAC)) {
+            return true;
+        }
+        final String customMacAddress = mCustomMacAddressView.getText().toString().trim();
+        return WifiUtils.isCustomMacAddressValidForRandomization(customMacAddress);
     }
 
     void showWarningMessagesIfAppropriate() {
@@ -889,6 +923,11 @@ public class WifiConfigController2 implements TextWatcher,
             config.setSendDhcpHostnameEnabled(WifiPrivacyPreferenceController.Companion
                     .translatePrefValueToSendDhcpHostnameEnabled(mDhcpSettingsSpinner
                             .getSelectedItemPosition()));
+        }
+        if (mCustomMacAddressView != null) {
+            final String customMacAddress = mCustomMacAddressView.getText().toString().trim();
+            WifiUtils.setCustomMacAddressForRandomization(
+                    TAG, config, TextUtils.isEmpty(customMacAddress) ? null : customMacAddress);
         }
 
         return config;
@@ -1804,6 +1843,8 @@ public class WifiConfigController2 implements TextWatcher,
         } else if (parent == mHiddenSettingsSpinner) {
             mHiddenWarningView.setVisibility(position == NOT_HIDDEN_NETWORK
                     ? View.GONE : View.VISIBLE);
+        } else if (parent == mPrivacySettingsSpinner) {
+            updateCustomMacAddressFieldVisibility();
         } else {
             showIpConfigFields();
         }

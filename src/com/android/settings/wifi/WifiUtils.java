@@ -28,6 +28,7 @@ import android.net.TetheringManager;
 import android.net.wifi.ScanResult;
 import android.net.wifi.SoftApConfiguration;
 import android.net.wifi.WifiConfiguration;
+import android.net.MacAddress;
 import android.net.wifi.WifiManager;
 import android.os.Process;
 import android.os.UserHandle;
@@ -53,6 +54,8 @@ import java.nio.charset.StandardCharsets;
 public class WifiUtils extends com.android.settingslib.wifi.WifiUtils {
 
     static final String TAG = "WifiUtils";
+    private static final String CUSTOM_MAC_FIELD_NAME = "customMacAddressForRandomization";
+    private static final String DEFAULT_MAC_ADDRESS = "02:00:00:00:00:00";
 
     private static final int SSID_ASCII_MIN_LENGTH = 1;
     private static final int SSID_ASCII_MAX_LENGTH = 32;
@@ -94,6 +97,53 @@ public class WifiUtils extends com.android.settingslib.wifi.WifiUtils {
             return false;
         }
         return true;
+    }
+
+    /** Returns whether the custom MAC address text is valid for randomization. */
+    public static boolean isCustomMacAddressValidForRandomization(String customMacAddress) {
+        if (TextUtils.isEmpty(customMacAddress)) {
+            return true;
+        }
+        try {
+            return isMacAddressValidForRandomization(MacAddress.fromString(customMacAddress));
+        } catch (IllegalArgumentException e) {
+            return false;
+        }
+    }
+
+    /** Returns custom randomization MAC address from WifiConfiguration. */
+    public static String getCustomMacAddressForRandomization(WifiConfiguration config) {
+        if (config == null) {
+            return null;
+        }
+        try {
+            final Object value = WifiConfiguration.class.getField(CUSTOM_MAC_FIELD_NAME).get(config);
+            return value == null ? null : value.toString();
+        } catch (ReflectiveOperationException e) {
+            return null;
+        }
+    }
+
+    /** Sets custom randomization MAC address into WifiConfiguration. */
+    public static void setCustomMacAddressForRandomization(
+            String logTag, WifiConfiguration config, String value) {
+        if (config == null) {
+            return;
+        }
+        try {
+            WifiConfiguration.class.getField(CUSTOM_MAC_FIELD_NAME).set(config, value);
+        } catch (ReflectiveOperationException e) {
+            Log.w(logTag, "Cannot set custom MAC address field", e);
+        }
+    }
+
+    private static boolean isMacAddressValidForRandomization(MacAddress mac) {
+        if (mac == null) {
+            return false;
+        }
+        final byte firstByte = mac.toByteArray()[0];
+        final boolean isMulticast = (firstByte & 0x01) != 0;
+        return !isMulticast && !TextUtils.equals(mac.toString(), DEFAULT_MAC_ADDRESS);
     }
 
     /**
