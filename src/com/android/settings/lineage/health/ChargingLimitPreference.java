@@ -18,29 +18,35 @@ package com.android.settings.lineage.health;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
 import com.android.internal.lineage.health.HealthInterface;
-
 import com.android.settings.R;
+import com.android.settings.Utils;
+import com.google.android.material.slider.LabelFormatter;
+import com.google.android.material.slider.Slider;
 
 public class ChargingLimitPreference extends Preference
-        implements SeekBar.OnSeekBarChangeListener {
-    private static final String TAG = ChargingLimitPreference.class.getSimpleName();
+        implements Slider.OnChangeListener, Slider.OnSliderTouchListener {
 
-    private TextView mChargingLimitValue;
-    private SeekBar mChargingLimitBar;
+    private static final int MIN_LIMIT = 70;
+    private static final int MAX_LIMIT = 100;
 
     private final HealthInterface mHealthInterface;
+
+    private TextView mChargingLimitValue;
+    private Slider mChargingLimitSlider;
+    private int mChargingLimit;
+    private boolean mTrackingTouch;
 
     public ChargingLimitPreference(final Context context, final AttributeSet attrs) {
         super(context, attrs);
 
         setLayoutResource(R.layout.preference_charging_limit);
+        setSelectable(false);
 
         mHealthInterface = HealthInterface.getInstance(context);
     }
@@ -51,47 +57,85 @@ public class ChargingLimitPreference extends Preference
 
         mChargingLimitValue = (TextView) holder.findViewById(R.id.value);
 
-        mChargingLimitBar = (SeekBar) holder.findViewById(R.id.seekbar_widget);
-        mChargingLimitBar.setOnSeekBarChangeListener(this);
+        final Slider slider = (Slider) holder.findViewById(
+                com.android.settingslib.widget.preference.slider.R.id.slider);
+        mChargingLimitSlider = slider;
+        if (slider == null) {
+            return;
+        }
 
-        int currLimit = getSetting();
-        mChargingLimitBar.setProgress(currLimit);
-        updateValue(currLimit);
+        final int currentLimit = getSetting();
+
+        slider.clearOnChangeListeners();
+        slider.setValueFrom(MIN_LIMIT);
+        slider.setValueTo(MAX_LIMIT);
+        slider.setLabelBehavior(LabelFormatter.LABEL_FLOATING);
+        slider.setLabelFormatter(value -> Utils.formatPercentage(Math.round(value)));
+        slider.setEnabled(isEnabled());
+        updateSlider(currentLimit);
+        slider.clearOnSliderTouchListeners();
+        slider.addOnSliderTouchListener(this);
+        slider.addOnChangeListener(this);
     }
 
     @Override
-    public void onStartTrackingTouch(final SeekBar seekBar) {
+    public void onValueChange(final Slider slider, final float value, final boolean fromUser) {
+        final int chargingLimit = sanitizeLimit(Math.round(value));
+        mChargingLimit = chargingLimit;
+        updateValue(chargingLimit);
+        slider.setStateDescription(Utils.formatPercentage(chargingLimit));
+
+        if (fromUser && !mTrackingTouch) {
+            setSetting(chargingLimit);
+        }
     }
 
     @Override
-    public void onStopTrackingTouch(final SeekBar seekBar) {
-        setSetting(seekBar.getProgress());
+    public void onStartTrackingTouch(final Slider slider) {
+        mTrackingTouch = true;
     }
 
     @Override
-    public void onProgressChanged(final SeekBar seekBar, final int progress,
-            final boolean fromUser) {
-        updateValue(progress);
+    public void onStopTrackingTouch(final Slider slider) {
+        mTrackingTouch = false;
+        setSetting(mChargingLimit);
     }
 
     public void setValue(final int value) {
-        if (mChargingLimitBar != null) {
-            mChargingLimitBar.setProgress(value);
+        updateSlider(sanitizeLimit(value));
+    }
+
+    protected int getSetting() {
+        final int storedLimit = mHealthInterface.getLimit();
+        final int currentLimit = sanitizeLimit(storedLimit);
+        if (currentLimit != storedLimit) {
+            mHealthInterface.setLimit(currentLimit);
+        }
+        return currentLimit;
+    }
+
+    protected void setSetting(final int chargingLimit) {
+        mHealthInterface.setLimit(sanitizeLimit(chargingLimit));
+    }
+
+    private void updateSlider(final int value) {
+        mChargingLimit = value;
+        if (mChargingLimitSlider != null) {
+            mChargingLimitSlider.setValue(value);
+            mChargingLimitSlider.setStateDescription(Utils.formatPercentage(value));
         }
         updateValue(value);
     }
 
-    protected int getSetting() {
-        return mHealthInterface.getLimit();
-    }
-
-    protected void setSetting(final int chargingLimit) {
-        mHealthInterface.setLimit(chargingLimit);
-    }
-
     private void updateValue(final int value) {
         if (mChargingLimitValue != null) {
-            mChargingLimitValue.setText(String.format("%d%%", value));
+            mChargingLimitValue.setText(getContext().getString(
+                    R.string.charging_control_limit_current,
+                    Utils.formatPercentage(value)));
         }
+    }
+
+    static int sanitizeLimit(final int value) {
+        return Math.max(MIN_LIMIT, Math.min(MAX_LIMIT, value));
     }
 }
