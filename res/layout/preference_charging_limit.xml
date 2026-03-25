@@ -16,48 +16,38 @@
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?expressivePreferenceRootLayoutStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
-    android:paddingVertical="6dip"
-    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:theme="?expressivePreferenceTheme"
+    android:orientation="vertical"
     android:paddingStart="?android:attr/listPreferredItemPaddingStart"
-    android:background="?android:attr/selectableItemBackground"
-    android:orientation="vertical">
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:clipChildren="false"
+    android:clipToPadding="false">
 
-    <RelativeLayout
+    <TextView
+        android:id="@android:id/title"
+        style="?expressivePreferenceTextFrameTitleStyle"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp" />
 
-        <TextView
-            android:id="@android:id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="?android:attr/textColorPrimary"
-            android:ellipsize="marquee"
-            android:fadingEdge="horizontal" />
+    <TextView
+        android:id="@+id/value"
+        style="?expressivePreferenceTextFrameSummaryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:singleLine="true" />
 
-        <TextView
-            android:id="@+id/value"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="?android:attr/textColorSecondary"
-            android:singleLine="true" />
-
-    </RelativeLayout>
-
-    <SeekBar
-        android:id="@+id/seekbar_widget"
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        style="@style/SettingslibSliderStyle.Expressive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="15dip"
-        android:min="70"
-        android:max="100" />
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/Theme.Material3.DynamicColors.DayNight" />
 
 </LinearLayout>
