@@ -46,6 +46,30 @@
       },
       "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a8c1c78_20e7b7d0",
+        "filename": "res/layout/preference_charging_limit.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-04-01T06:26:10Z",
+      "side": 1,
+      "message": "nvm",
+      "parentUuid": "ff8efebd_1cbf1cfe",
+      "range": {
+        "startLine": 21,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
