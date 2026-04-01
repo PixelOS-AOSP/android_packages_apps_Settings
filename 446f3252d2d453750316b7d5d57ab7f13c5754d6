@@ -108,6 +108,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "07d67216_2cef984e",
+        "filename": "res/values/custom_styles.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-04-01T07:13:20Z",
+      "side": 1,
+      "message": "Why do we need custom style here? If we\u0027re using SettingsLib/Material3 components, they should already inherit required styles.",
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8bbf051d_db0e9e67",
         "filename": "src/com/android/settings/lineage/health/ChargingLimitPreference.java",
         "patchSetId": 1
