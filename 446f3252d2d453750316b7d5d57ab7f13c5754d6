@@ -104,6 +104,23 @@
       "message": "Do we really need FrameLayout here?",
       "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8bbf051d_db0e9e67",
+        "filename": "src/com/android/settings/lineage/health/ChargingLimitPreference.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-04-01T07:12:05Z",
+      "side": 1,
+      "message": "Keep MAX_LIMIT to 100. Same as before.",
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
