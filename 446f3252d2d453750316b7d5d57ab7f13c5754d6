@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff8efebd_1cbf1cfe",
+        "filename": "res/layout/preference_charging_limit.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-04-01T06:00:11Z",
+      "side": 1,
+      "message": "The font on the text \"limit\" stills feels off.",
+      "range": {
+        "startLine": 21,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
