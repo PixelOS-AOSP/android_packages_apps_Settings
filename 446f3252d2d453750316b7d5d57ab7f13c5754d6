@@ -70,6 +70,23 @@
       },
       "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58a29865_4ff4806a",
+        "filename": "res/layout/preference_charging_limit.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-04-01T07:09:58Z",
+      "side": 1,
+      "message": "Do we really need FrameLayout here?",
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
