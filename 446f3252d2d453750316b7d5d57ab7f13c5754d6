@@ -156,6 +156,24 @@
       "parentUuid": "8bbf051d_db0e9e67",
       "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d4a4051_d8dacb25",
+        "filename": "src/com/android/settings/lineage/health/ChargingLimitPreference.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000036
+      },
+      "writtenOn": "2026-04-03T16:35:54Z",
+      "side": 1,
+      "message": "I think leaving it as default is a better idea. Or move max to 100 if you wanna keep multiple of 5",
+      "parentUuid": "7df16d4f_ecec453c",
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
