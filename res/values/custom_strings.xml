@@ -366,4 +366,8 @@
     <string name="language_picker_page">Language picker page</string>
     <string name="search_region">Search regions</string>
     <string name="search_region_page">Search region page</string>
+
+    <!-- Pocket mode -->
+    <string name="pocket_judge_title">Pocket mode</string>
+    <string name="pocket_judge_summary">Block accidental touches when phone is in pocket</string>
 </resources>

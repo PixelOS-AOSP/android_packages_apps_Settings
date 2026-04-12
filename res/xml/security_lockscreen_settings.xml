@@ -88,6 +88,7 @@
             android:title="@string/lockscreen_double_line_clock_setting_toggle"
             android:summary="@string/lockscreen_double_line_clock_summary"
             settings:controller="com.android.settings.display.LockscreenClockPreferenceController" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -124,6 +125,13 @@
             android:fragment="com.android.settings.gestures.PickupGestureSettings"
             settings:searchable="false"
             settings:controller="com.android.settings.gestures.PickupGesturePreferenceController" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="pocket_judge"
+            android:title="@string/pocket_judge_title"
+            android:summary="@string/pocket_judge_summary"
+            android:defaultValue="false"
+            settings:requiresConfig="@*android:bool/config_pocketModeSupported" />
         
         <SwitchPreferenceCompat
             android:key="gesture_screen_off_udfps"
