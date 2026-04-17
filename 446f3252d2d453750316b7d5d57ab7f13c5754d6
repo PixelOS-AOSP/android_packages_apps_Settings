@@ -209,6 +209,24 @@
       "parentUuid": "2d4a4051_d8dacb25",
       "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ad7ea50_016e131a",
+        "filename": "src/com/android/settings/lineage/health/ChargingLimitPreference.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-04-17T07:44:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e251b1ea_a343fd7a",
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
