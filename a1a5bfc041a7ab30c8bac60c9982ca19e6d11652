@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea6732ee_5209a564",
+        "filename": "res/values/custom_strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-04-17T07:36:19Z",
+      "side": 1,
+      "message": "lowercase the L, looks weird with uppercase",
+      "revId": "a1a5bfc041a7ab30c8bac60c9982ca19e6d11652",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
