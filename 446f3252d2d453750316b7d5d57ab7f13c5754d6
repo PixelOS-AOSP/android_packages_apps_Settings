@@ -123,6 +123,24 @@
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f8b9c3e_f682d5fe",
+        "filename": "res/layout/preference_charging_limit.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-04-17T12:17:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "58a29865_4ff4806a",
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "07d67216_2cef984e",
@@ -136,6 +154,24 @@
       "writtenOn": "2026-04-01T07:13:20Z",
       "side": 1,
       "message": "Why do we need custom style here? If we\u0027re using SettingsLib/Material3 components, they should already inherit required styles.",
+      "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0161afc9_3488da77",
+        "filename": "res/values/custom_styles.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-04-17T12:17:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "07d67216_2cef984e",
       "revId": "446f3252d2d453750316b7d5d57ab7f13c5754d6",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
     },
