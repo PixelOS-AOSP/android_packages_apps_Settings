@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "44bdc339_f30ad354",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-04-22T16:15:31Z",
+      "side": 1,
+      "message": "is this enough by itself? iirc the glanceable hub rro\u0027s from stock are also needed",
+      "revId": "c8131ecf5c1d15c10473611142906ca3f567e975",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
