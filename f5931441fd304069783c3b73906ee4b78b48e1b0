@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "555ed2a4_35002468",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000036
+      },
+      "writtenOn": "2026-04-25T13:00:58Z",
+      "side": 1,
+      "message": "Doesn\u0027t limit charging until we enable it and reboot the device.\nTested on sweet",
+      "revId": "f5931441fd304069783c3b73906ee4b78b48e1b0",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
