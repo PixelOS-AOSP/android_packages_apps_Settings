@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "084c0b51_bf7dc78f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000090
+      },
+      "writtenOn": "2026-05-01T12:01:15Z",
+      "side": 1,
+      "message": "Looks like this https://t.me/pixeloschat/598388",
+      "revId": "3a07a217dd42d70f35a10e4437a276e593634980",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
