@@ -16,6 +16,23 @@
       "message": "Looks like this https://t.me/pixeloschat/598388",
       "revId": "3a07a217dd42d70f35a10e4437a276e593634980",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91e48ccf_ba6860a4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-05-02T02:18:49Z",
+      "side": 1,
+      "message": "commit msg needs some polishing imo",
+      "revId": "3a07a217dd42d70f35a10e4437a276e593634980",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
