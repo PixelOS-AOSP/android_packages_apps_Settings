@@ -16,6 +16,23 @@
       "message": "Works as intended",
       "revId": "3eeb51773d0ecea2981836604ba413169c832e6b",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e3b7063e_7d442494",
+        "filename": "res/layout/preference_charging_limit.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-05-03T15:44:32Z",
+      "side": 1,
+      "message": "Can we possibly not do changes causing unnecessary diffs?",
+      "revId": "3eeb51773d0ecea2981836604ba413169c832e6b",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
