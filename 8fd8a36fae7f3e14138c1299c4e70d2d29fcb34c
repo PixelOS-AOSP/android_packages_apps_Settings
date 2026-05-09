@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d92a849_5a029ff3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-05-09T20:56:43Z",
+      "side": 1,
+      "message": "Tested on Moto Edge 30. Works as intended. Will wait for @info.hridayaprajapati@gmail.com",
+      "revId": "8fd8a36fae7f3e14138c1299c4e70d2d29fcb34c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
