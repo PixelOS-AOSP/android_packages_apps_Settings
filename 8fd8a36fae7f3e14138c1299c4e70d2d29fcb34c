@@ -33,6 +33,23 @@
       "message": "Works on veux too",
       "revId": "8fd8a36fae7f3e14138c1299c4e70d2d29fcb34c",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d44e2dd8_e951f44d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-05-10T06:57:01Z",
+      "side": 1,
+      "message": "No diff found while running google-java-format",
+      "revId": "8fd8a36fae7f3e14138c1299c4e70d2d29fcb34c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
