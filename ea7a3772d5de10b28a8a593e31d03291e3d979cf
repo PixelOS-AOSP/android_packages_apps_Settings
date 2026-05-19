@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a1d6bf0_e6355b9c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-05-19T06:02:31Z",
+      "side": 1,
+      "message": "FYI Google also does the same with SettingsGoogle",
+      "revId": "ea7a3772d5de10b28a8a593e31d03291e3d979cf",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
