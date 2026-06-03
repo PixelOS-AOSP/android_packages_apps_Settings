@@ -16,6 +16,23 @@
       "message": "+1. Good idea!",
       "revId": "d1f52416b0b95c1dae74ab7234926521de3039d9",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3d076a2_d0096112",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000090
+      },
+      "writtenOn": "2026-06-03T02:29:14Z",
+      "side": 1,
+      "message": "Didn\u0027t really work for me https://t.me/c/1799849832/33941, but I remember there was a commit in my kernel tree which limits kernel commit HEAD to 8 letters so that could be it :)",
+      "revId": "d1f52416b0b95c1dae74ab7234926521de3039d9",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
