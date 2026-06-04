@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b09302d6_742aba96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-06-04T14:25:04Z",
+      "side": 1,
+      "message": "@angxddeep@gmail.com Please leave your review on this change\nI am expecting this color diff in fingerprint enrolling page:\n\n[AOSP](https://media.discordapp.net/attachments/1416781159026786316/1486948519376977920/Screenshot_20260327-114147.png?ex\u003d6a2253b9\u0026is\u003d6a210239\u0026hm\u003dbb8299d5e60913bbe961cfc172b96c6f3590a51a699f90f07625e94fe3419f23\u0026\u003d\u0026format\u003dwebp\u0026quality\u003dlossless\u0026width\u003d385\u0026height\u003d856)\n[Pixel](https://media.discordapp.net/attachments/1416781159026786316/1486948519742013510/IMG_20260327_114158_049.jpg?ex\u003d6a2253b9\u0026is\u003d6a210239\u0026hm\u003d52ae53655f7d6b8c2a35b9dec0e34a1922d06d5cde26c4496ef1772cb5f39a6c\u0026\u003d\u0026format\u003dwebp\u0026width\u003d403\u0026height\u003d855)",
+      "revId": "b3b30890276d2d876dc01257b5fa52ee962640e3",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
