@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8445b9ff_54f831a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000090
+      },
+      "writtenOn": "2026-06-04T15:47:07Z",
+      "side": 1,
+      "message": "can\u0027t test as I don\u0027t have a device with UPFPS",
+      "revId": "1cfe3bb28106b49285964c58572f054b63e1a75c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
