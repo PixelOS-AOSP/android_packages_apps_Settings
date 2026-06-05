@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6f53639_cf92dac9",
+        "filename": "res/values/styles.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 1111,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-06-05T12:00:50Z",
+      "side": 1,
+      "message": "did you mean `?android:attr/*` instead?",
+      "range": {
+        "startLine": 1108,
+        "startChar": 0,
+        "endLine": 1111,
+        "endChar": 73
+      },
+      "revId": "36c3863b6dc5beb779d5d57ed3c3c7fda6b30650",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
