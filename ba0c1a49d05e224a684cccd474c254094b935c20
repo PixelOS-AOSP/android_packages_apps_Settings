@@ -16,6 +16,23 @@
       "message": "https://t.me/unseeker/3029",
       "revId": "ba0c1a49d05e224a684cccd474c254094b935c20",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1c0f97c_3cc3cf24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-06-08T14:15:14Z",
+      "side": 1,
+      "message": "Change works as intended",
+      "revId": "ba0c1a49d05e224a684cccd474c254094b935c20",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
