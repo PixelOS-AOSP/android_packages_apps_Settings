@@ -368,7 +368,8 @@ public class ConfirmLockPattern extends ConfirmDeviceCredentialBaseActivity {
                 outState.putString(KEY_INPUT_MODE, mInputMode.name());
             }
             if (mInputPattern != null && !mInputPattern.isEmpty()) {
-                byte[] patternBytes = LockPatternUtils.patternToByteArray(mInputPattern);
+                byte[] patternBytes = LockPatternUtils.patternToByteArray(mInputPattern,
+                        mPatternSize);
                 if (patternBytes != null) {
                     outState.putString(KEY_INPUT_PATTERN, new String(patternBytes));
                 }
