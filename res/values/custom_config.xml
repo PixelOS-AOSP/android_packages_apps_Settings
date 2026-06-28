@@ -19,4 +19,7 @@
 
     <!-- Show advanced refresh rate option -->
     <bool name="config_show_advanced_refresh_rate" translatable="false">true</bool>
+
+    <!-- Whether to show the search box in the Setup Wizard locale picker. -->
+    <bool name="config_show_setuplocalepicker_region_searchbox">true</bool>
 </resources>
