@@ -17,7 +17,7 @@
 package com.android.settings.custom.touch;
 
 import android.content.Context;
-import com.android.internal.custom.hardware.LineageHardwareManager;
+import com.android.internal.lineage.hardware.LineageHardwareManager;
 import com.android.settings.core.BasePreferenceController;
 
 public class TouchHoveringSettingsPreferenceController extends BasePreferenceController {
