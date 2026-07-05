@@ -16,6 +16,24 @@
       "message": "Setting `config_show_device_header_in_device_info` to `false` retains the desired behavior without modifying code",
       "revId": "2032d75bca85479374cd9d6350a344885e1f6f41",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c63027e1_c27a95ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-07-05T05:43:07Z",
+      "side": 1,
+      "message": "Right, will check it out",
+      "parentUuid": "b4955760_a8d60197",
+      "revId": "2032d75bca85479374cd9d6350a344885e1f6f41",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
