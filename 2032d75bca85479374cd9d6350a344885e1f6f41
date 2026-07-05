@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4955760_a8d60197",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-07-05T01:53:48Z",
+      "side": 1,
+      "message": "Setting `config_show_device_header_in_device_info` to `false` retains the desired behavior without modifying code",
+      "revId": "2032d75bca85479374cd9d6350a344885e1f6f41",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
