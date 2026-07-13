@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aaa64d39_c74c09d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000090
+      },
+      "writtenOn": "2026-07-13T10:37:52Z",
+      "side": 1,
+      "message": "Some WiFi HAL don\u0027t support the country code definition, without this devices only show 2.4ghz in Hotspot even though support for 5hz and even 6ghz is there",
+      "revId": "1ae24d8145d9ca17327ab2ab0680715db4cabe3b",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
