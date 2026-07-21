@@ -362,4 +362,6 @@
     <string name="network_traffic_units_kilobytes">Kilobytes per second (kB/s)</string>
     <string name="network_traffic_units_megabytes">Megabytes per second (MB/s)</string>
     <string name="network_traffic_units_auto">Automatic (kB/s or MB/s)</string>
+    <!-- Expressive QR -->
+    <string name="wifi_qr_code_animation_control">pause the animation</string>
 </resources>
