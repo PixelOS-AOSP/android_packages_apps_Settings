@@ -10,14 +10,12 @@ import com.google.android.settings.update.SoftwareUpdateScreen;
 
 public abstract class SettingsGoogleScreenCollector {
 
-    public static FixedArrayMap get() {
-        return new FixedArrayMap(
-                4,
-                (obj) ->
-                        SettingsGoogleScreenCollector.init((FixedArrayMap.OrderedInitializer) obj));
+    public static FixedArrayMap<String, PreferenceScreenMetadataFactory> get() {
+        return new FixedArrayMap<>(4, SettingsGoogleScreenCollector::init);
     }
 
-    private static void init(FixedArrayMap.OrderedInitializer initializer) {
+    private static void init(
+            FixedArrayMap.OrderedInitializer<String, PreferenceScreenMetadataFactory> initializer) {
         initializer.put(
                 "adaptive_battery_entry",
                 (PreferenceScreenMetadataFactory) AdaptiveBatteryScreen::new);
