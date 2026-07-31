@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"تنظیم نشده"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"کاغذدیواری"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"کاغذدیواری و سبک"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"صفحه اصلی، صفحه قفل"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">رنگ‌ها، نمادهای موضوعی، شبکه برنامه‌ها</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"تغییر کاغذدیواری"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"شخصی‌سازی صفحه‌نمایش"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"انتخاب کاغذدیواری از"</string>
@@ -3647,7 +3647,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"سفارشی‌سازی مکان‌نما، کنش‌های کلیک، پیمایش"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"‏غیرقابل‌دسترسی چون NFC خاموش است"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"برای استفاده، ابتدا یک برنامه پرداخت نصب کنید"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"برنامه‌های اخیر، برنامه‌ها پیش‌فرض"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">دستیار، برنامه‌های اخیر، برنامه‌های پیش‌فرض</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"برنامه‌ها نمی‌توانند در نمایه کاری به اعلان‌ها دسترسی داشته باشند."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"گذرواژه‌ها و حساب‌ها"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"پیشنهادهایی برای ورود به سیستم و تکمیل خودکار"</string>
@@ -3775,7 +3775,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"صفحه‌کلید، فناوری لمسی، لرزش، تایپ کردن"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"نمایشگر خارجی، نمایشگر متصل، نمایشگر گسترده، نمایشگر دوم، نمایشگر داخلی، مرتب کردن نمایشگرها، قرینه‌سازی، اندازه نمایش، چرخش، وضوح، نرخ بازآوری"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"هشتک، هشتک نوشتار، مکان‌نمای نوشتار، مکان‌نما، چشمک زدن، فاصله چشمک زدن، نرخ چشمک زدن، پویانمایی، کاهش پویانمایی، برداشتن پویانمایی"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"میزان صدا و لرزش"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">میزان صدا و فناوری لمسی</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"میزان صدای رسانه"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"‏میزان صدای Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"میزان صدای تماس"</string>
@@ -4679,7 +4679,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"‫<xliff:g id="PERCENTAGE">%1$s</xliff:g> استفاده‌شده - <xliff:g id="FREE_SPACE">%2$s</xliff:g> آزاد"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"زمینه تاریک، اندازه قلم، روشنایی"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">زمینه تیره، اندازه قلم، لمس</string>
     <string name="memory_summary" msgid="8221954450951651735">"به‌طور متوسط <xliff:g id="USED_MEMORY">%1$s</xliff:g> از <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> حافظه استفاده شده است"</string>
     <string name="users_summary" msgid="8473589474976307510">"به‌عنوان <xliff:g id="USER_NAME">%1$s</xliff:g> به سیستم وارد شده‌اید"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"‏به Android <xliff:g id="VERSION">%1$s</xliff:g> به‌روزرسانی شده"</string>

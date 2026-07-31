@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Ezarri gabe"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Horma-papera"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Horma-papera eta estiloa"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Orri nagusia, pantaila blokeatua"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Koloreak, ikono gaidunak, aplikazioen sareta</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Aldatu horma-papera"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Pertsonalizatu pantaila"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Aukeratu horma-papera"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Kurtsorearen pertsonalizazioa, klik egiteko ekintzak, gora eta behera egitea"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Ez dago erabilgarri NFCa desaktibatuta dagoelako"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Erabiltzeko, instalatu ordainketak egiteko aplikazio bat"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Azkenaldiko aplikazioak, aplikazio lehenetsiak"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Laguntzailea, azkenaldiko aplikazioak, aplikazio lehenetsiak</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Laneko profilaren aplikazioek ezin dituzte atzitu jakinarazpenak."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Pasahitzak eta kontuak"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Saioa hasteko eta betetze automatikorako iradokizunak"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"teklatua, teknologia haptikoa, dardara, idazketa"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"kanpoko pantaila, konektatutako pantaila, pantaila hedatua, bigarren pantaila, pantaila integratua, antolatu pantailak, islatu, bistaratzeko tamaina, biratzea, bereizmena, freskatze-abiadura"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"testu-kurtsorea, kurtsorea, keinua, keinu-tartea, keinu-maiztasuna, animazioa, murriztu animazioa, kendu animazioa"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Bolumena eta dardara"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Bolumena eta teknologia haptikoa</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Multimedia-edukiaren bolumena"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast-en bolumena"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Deien bolumena"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> erabilita - <xliff:g id="FREE_SPACE">%2$s</xliff:g> libre"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Gai iluna, letra-tamaina, argitasuna, distira"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Gai iluna, letra-tamaina, ukipena</string>
     <string name="memory_summary" msgid="8221954450951651735">"<xliff:g id="USED_MEMORY">%1$s</xliff:g> / <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> erabili dira batez beste"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> gisa hasi duzu saioa"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g> bertsiora eguneratuta"</string>

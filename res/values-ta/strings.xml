@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"அமைக்கப்படவில்லை"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"வால்பேப்பர்"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"வால்பேப்பரும் ஸ்டைலும்"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"முகப்பு, பூட்டுத் திரை"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">வண்ணங்கள், தீம் ஐகான்கள், ஆப்ஸ் கட்டக் காட்சி</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"வால்பேப்பரை மாற்று"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"திரையைப் பிரத்தியேகமாக்கு"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"வால்பேப்பர் தேர்வு"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"கர்சர் பிரத்தியேகமாக்கம், கிளிக் செயல்கள், ஸ்க்ரோலிங்"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC ஆஃப் செய்யப்பட்டிருப்பதால் பயன்படுத்த முடியாது"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"பயன்படுத்த, முதலில் பேமெண்ட் ஆப்ஸை நிறுவவும்"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"சமீபத்திய ஆப்ஸ், இயல்பான ஆப்ஸ்"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Assistant, சமீபத்திய ஆப்ஸ், இயல்பான ஆப்ஸ்</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"பணிக் கணக்கில், ஆப்ஸுற்கான அறிவிப்பு அணுகல் இல்லை."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"கடவுச்சொற்களும் கணக்குகளும்"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"உள்நுழைதல் &amp; தன்னிரப்பிக்கான பரிந்துரைகள்"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"கீபோர்டு, ஹாப்டிக்ஸ், அதிர்வு, டைப் செய்தல்"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"வெளிப்புற டிஸ்ப்ளே, இணைக்கப்பட்ட டிஸ்ப்ளே, விரிவுபடுத்தப்பட்ட டிஸ்ப்ளே, இரண்டாம் டிஸ்ப்ளே, உள்ளமைக்கப்பட்ட டிஸ்ப்ளே, டிஸ்ப்ளேக்களை ஒழுங்குபடுத்துதல், பிரதிபலித்தல், டிஸ்ப்ளே அளவு, சுழற்சி, தெளிவுத்திறன், புதுப்பிக்கும் விகிதம்"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"கர்சர், வார்த்தை கர்சர், வார்த்தை கர்சர், கர்சர், ஒளிர்தல், ஒளிர்தல் இடைவெளி, ஒளிர்தல் விகிதம், அனிமேஷன், அனிமேஷனைக் குறைத்தல், அனிமேஷனை அகற்றுதல்"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"ஒலியளவும் அதிர்வும்"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">ஒலியளவு மற்றும் ஹாப்டிக்ஸ்</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"மீடியா ஒலியளவு"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast ஒலியளவு"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"அழைப்பின் ஒலியளவு"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"பயன்படுத்தியது: <xliff:g id="PERCENTAGE">%1$s</xliff:g>, காலியிடம்: <xliff:g id="FREE_SPACE">%2$s</xliff:g>"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"டார்க் தீம், எழுத்து அளவு, ஒளிர்வு"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">டார்க் தீம், எழுத்து அளவு, தொடுதல்</string>
     <string name="memory_summary" msgid="8221954450951651735">"<xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> இல் சராசரியாக <xliff:g id="USED_MEMORY">%1$s</xliff:g> நினைவகம் பயன்படுத்தப்பட்டுள்ளது"</string>
     <string name="users_summary" msgid="8473589474976307510">"உள்நுழைந்துள்ள பயனர்: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g> பதிப்புக்குப் புதுப்பிக்கப்பட்டது"</string>

@@ -713,7 +713,7 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"Ayuda a excluir el contenido explícito en algunas aplicaciones y navegadores de este dispositivo. Puede seguir apareciendo contenido explícito en otras aplicaciones, dispositivos o navegadores."</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"Elige lo que quieres ver en tu pantalla cuando tu tablet está conectada a la base. El dispositivo puede consumir más energía si se usa un salvapantallas."</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"Elige lo que quieres ver en la pantalla cuando tu dispositivo no está conectado a la base. El dispositivo puede consumir más energía si se usa un salvapantallas."</string>
-    <string name="display_settings" product="default" msgid="3387606354749476666">"Pantalla"</string>
+    <string name="display_settings" product="default" msgid="3387606354749476666">Pantalla y ajustes táctiles</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"Sonido y vibración"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"Sonido"</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"Permitir Desbloqueo facial"</string>

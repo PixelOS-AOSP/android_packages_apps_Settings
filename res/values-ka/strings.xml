@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"არ არის დაყენებული"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"ფონი"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"ფონი და სტილი"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"მთავარი, ჩაკეტილი ეკრანი"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">ფერები, თემატური ხატულები, აპების ბადე</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"ფონის შეცვლა"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"თქვენი ეკრანის პერსონალიზება"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"ფონის არჩევა:"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"კურსორის მორგება, დაწკაპუნების მოქმედებები, გადაადგილება"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"მიუწვდომელია, რადგან NFC გამორთულია"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"გამოსაყენებლად დააინსტალირეთ გადახდის აპი"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"ბოლო აპები, ნაგულისხმევი აპები"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">ასისტენტი, ბოლოდროინდელი აპები, ნაგულისხმევი აპები</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"შეტყობინებებზე წვდომა სამსახურის პროფილში არსებული აპებისთვის მიუწვდომელია."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"პაროლები და ანგარიშები"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"შესვლის და ავტომატური შევსების შეთავაზებები"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"კლავიატურა, ჰაპტიკა, ვიბრაცია, აკრეფა"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"გარე ეკრანი, დაკავშირებული ეკრანი, გაფართოებული ეკრანი, მეორე ეკრანი, ჩაშენებული ეკრანი, ეკრანების განლაგება, არეკვლა, ეკრანის ზომა, შეტრიალება, გარჩევადობა, განახლების სიხშირე"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"კურსორი, ტექსტის შეყვანის წერტილი, ტექსტის კურსორი, კურსორი, ციმციმი, ციმციმის ინტერვალი, ციმციმის სიხშირე, ანიმაცია, ანიმაციის შემცირება, ანიმაციის ამოშლა"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"ხმა და ვიბრაცია"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">ხმა და ჰაპტიკა</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"მედიის ხმა"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast-ის ხმა"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"ზარის ხმა"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"გამოყენებულია <xliff:g id="PERCENTAGE">%1$s</xliff:g> — თავისუფალია <xliff:g id="FREE_SPACE">%2$s</xliff:g>"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"მუქი თემა, შრიფტის ზომა, სიკაშკაშე"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">მუქი თემა, შრიფტის ზომა, შეხება</string>
     <string name="memory_summary" msgid="8221954450951651735">"გამოყენებულია საშ. <xliff:g id="USED_MEMORY">%1$s</xliff:g> / <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>დან"</string>
     <string name="users_summary" msgid="8473589474976307510">"შესული ხართ, როგორც <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"განახლდა Android <xliff:g id="VERSION">%1$s</xliff:g>-ზე"</string>

@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Nie gestel nie"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Muurpapier"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Muurpapier en styl"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Tuisskerm, sluitskerm"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Kleure, ikone met temas, approoster</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Verander muurpapier"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Personaliseer jou skerm"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Kies muurpapier uit"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Skermpyltjiepasmaking, klikhandelinge, rollees"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Nie beskikbaar nie want NFC is af"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Installeer eers \'n betalingprogram om dit te gebruik"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Onlangse apps, verstekapps"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Assistent, onlangse apps, verstekapps</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Kennisgewingtoegang is nie vir programme in die werkprofiel beskikbaar nie."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Wagwoorde en rekeninge"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Voorstelle vir aanmelding en outovul"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"sleutelbord, tasbare terugvoer, vibreer, tik"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"eksterne skerm, gekoppelde skerm, uitgebreide skerm, tweede skerm, ingeboude skerm, organiseer skerms, weerspieël, skermgrootte, rotasie, resolusie, herlaaitempo"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"inlasteken, teksinlasteken, teksskermpyltjie, skermpyltjie, flitsing, flitsinterval, flitstempo, animasie, verminder animasie, verwyder animasie"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Volume en vibrasie"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Volume en tasbare terugvoer</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Mediavolume"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast-volume"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Oproepvolume"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> gebruik – <xliff:g id="FREE_SPACE">%2$s</xliff:g> beskikbaar"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Donkertema, lettergrootte, helderheid"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Donkertema, lettertipegrootte, raak</string>
     <string name="memory_summary" msgid="8221954450951651735">"Gemiddeld <xliff:g id="USED_MEMORY">%1$s</xliff:g> van <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> berging gebruik"</string>
     <string name="users_summary" msgid="8473589474976307510">"Aangemeld as <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Opgedateer na Android <xliff:g id="VERSION">%1$s</xliff:g>"</string>

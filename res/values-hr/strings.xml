@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Nije postavljeno"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Pozadinska slika"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Pozadina i stil"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Početni zaslon, zaključani zaslon"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Boje, tematske ikone, rešetka aplikacija</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Promijenite pozadinsku sliku"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Prilagodite zaslon"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Odabir pozadinske slike iz"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Prilagodba pokazivača, radnje pomoću klika, pomicanje"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Nije dostupno jer je NFC isključen"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Za upotrebu najprije instalirajte aplikaciju za plaćanje"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Nedavne aplikacije, zadane aplikacije"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Asistent, nedavne aplikacije, zadane aplikacije</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Pristup obavijestima nije dostupan za aplikacije u radnom profilu."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Zaporke i računi"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Prijedlozi za prijavu i automatsko popunjavanje"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"tipkovnica, haptika, vibracija, tipkanje"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"vanjski zaslon, povezani zaslon, prošireni zaslon, drugi zaslon, ugrađeni zaslon, raspored zaslona, zrcaljenje, veličina zaslona, rotacija, razlučivost, učestalost osvježavanja"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"kursor, kursor za tekst, pokazivač za tekst, pokazivač, treperenje, interval treperenja, stopa treperenja, animacija, smanjivanje animacije, uklanjanje animacije"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Glasnoća i vibracija"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Glasnoća i haptika</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Glasnoća medija"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Glasnoća Google Casta"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Glasnoća poziva"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> iskorišteno – <xliff:g id="FREE_SPACE">%2$s</xliff:g> slobodno"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Tamna tema, veličina fonta, svjetlina"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Tamna tema, veličina fonta, dodir</string>
     <string name="memory_summary" msgid="8221954450951651735">"Iskorišteno je prosječno <xliff:g id="USED_MEMORY">%1$s</xliff:g> od <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>"</string>
     <string name="users_summary" msgid="8473589474976307510">"Prijavljeni ste kao <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Ažurirano na Android <xliff:g id="VERSION">%1$s</xliff:g>"</string>

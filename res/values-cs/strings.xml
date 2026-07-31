@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Nenastaveno"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Tapeta"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Tapety a styl"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Plocha, obrazovka uzamčení"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Barvy, tematické ikony, mřížka aplikací</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Změňte si tapetu"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Přizpůsobte si obrazovku"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Vybrat tapetu"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Přizpůsobení kurzoru, akce kliknutí, posouvání"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Nejsou dostupné, protože funkce NFC je vypnutá"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Před použitím nejprve nainstalujte platební aplikaci"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Nedávné aplikace, výchozí aplikace"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Asistent, nedávné aplikace, výchozí aplikace</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Aplikace v pracovním profilu nemají přístup k oznámením."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Hesla a účty"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Návrhy pro přihlašování a automatické vyplňování"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"klávesnice, hmatová odezva, vibrace, psaní"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"externí displej, připojený displej, rozšířený displej, druhý displej, vestavěný displej, uspořádání displejů, zrcadlení, velikost zobrazení, otočení, rozlišení, obnovovací frekvence"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"textový kurzor, kurzor, blikání, interval blikání, rychlost blikání, animace, omezit animaci, odstranit animaci"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Hlasitost a vibrace"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Hlasitost a hmatová odezva</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Hlasitost médií"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Hlasitost Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Hlasitost hovorů"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"Využito: <xliff:g id="PERCENTAGE">%1$s</xliff:g> – volné místo: <xliff:g id="FREE_SPACE">%2$s</xliff:g>"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Tmavý motiv, velikost písma, jas"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Tmavý motiv, velikost písma, dotykové ovládání</string>
     <string name="memory_summary" msgid="8221954450951651735">"Přibližné využití paměti: <xliff:g id="USED_MEMORY">%1$s</xliff:g> z <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>"</string>
     <string name="users_summary" msgid="8473589474976307510">"Jste přihlášeni jako <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Aktualizováno na Android <xliff:g id="VERSION">%1$s</xliff:g>"</string>

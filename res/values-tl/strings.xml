@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Hindi nakatakda"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Wallpaper"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Wallpaper &amp; istilo"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Home, lock screen"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Mga kulay, mga may temang icon, grid ng app</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Baguhin ang wallpaper"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"I-personalize ang iyong screen"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Pumili ng wallpaper sa"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Pag-customize ng cursor, mga pagkilos sa pag-click, pag-scroll"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Hindi available dahil naka-off ang NFC"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Para magamit, mag-install muna ng app sa pagbabayad"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Mga kamakailang app, mga default na app"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Assistant, mga kamakailang app, mga default na app</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Hindi available ang access sa notification para sa mga app sa profile sa trabaho."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Mga password at account"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Mga suhestyon para sa pag-sign in at autofill"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"keyboard, haptics, pag-vibrate, pag-type"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"external na display, nakakonektang display, naka-extend na display, pangalawang display, naka-built in na display, ayusin ang mga display, i-mirror, laki ng display, rotation, resolution, rate ng pag-refresh"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"caret, caret ng text, cursor ng text, cursor, nagbi-blink, interval ng pag-blink, rate ng pag-blink, animation, bawasan ang animation, alisin ang animation"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Volume at pag-vibrate"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Volume at haptics</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Volume ng media"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Volume ng Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Volume ng tawag"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> ang ginagamit - <xliff:g id="FREE_SPACE">%2$s</xliff:g> ang bakante"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Madilim na tema, laki ng font, liwanag"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Madilim na tema, laki ng font, touch</string>
     <string name="memory_summary" msgid="8221954450951651735">"Avg <xliff:g id="USED_MEMORY">%1$s</xliff:g> ng <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> ng ginamit na memory"</string>
     <string name="users_summary" msgid="8473589474976307510">"Naka-sign in bilang <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Na-update sa Android <xliff:g id="VERSION">%1$s</xliff:g>"</string>
