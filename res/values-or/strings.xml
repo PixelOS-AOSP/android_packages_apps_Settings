@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"ସେଟ ହୋଇନାହିଁ"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"ୱାଲପେପର"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"ୱାଲପେପର ଏବଂ ଷ୍ଟାଇଲ"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"ହୋମ, ଲକ ସ୍କ୍ରିନ"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">ରଙ୍ଗ, ଥିମ ଥିବା ଆଇକନ, ଆପ ଗ୍ରିଡ</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"ୱାଲପେପର ପରିବର୍ତ୍ତନ କରନ୍ତୁ"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"ଆପଣଙ୍କ ସ୍କ୍ରୀନ୍‌ ନିଜ ମନ ମୁତାବକ ସଜାଡ଼ନ୍ତୁ"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"ଏଥିରୁ ୱାଲ୍‌ପେପର୍‌ ବାଛନ୍ତୁ"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"କର୍ସର କଷ୍ଟମାଇଜେସନ, କ୍ଲିକ କାର୍ଯ୍ୟ, ସ୍କ୍ରୋଲିଂ"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC ବନ୍ଦ ଥିବାରୁ ଅନୁପଲବ୍ଧ ଅଛି"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"ବ୍ୟବହାର କରିବାକୁ, ପ୍ରଥମେ ଏକ ପେମେଣ୍ଟ ଆପ ଇନଷ୍ଟଲ କରନ୍ତୁ"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"ବର୍ତ୍ତମାନର ଆପଗୁଡ଼ିକ, ଡିଫଲ୍ଟ ଆପଗୁଡ଼ିକ"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Assistant,ବର୍ତ୍ତମାନର ଆପ୍ସ, ଡିଫଲ୍ଟ ଆପ୍ସ</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"ୱାର୍କ ପ୍ରୋଫାଇଲ୍‍ରେ ଆପ୍‍ସ ପାଇଁ ବିଜ୍ଞପ୍ତି ଆକ୍ସେସ ଉପଲବ୍ଧ ନାହିଁ."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"ପାସୱାର୍ଡ ଏବଂ ଆକାଉଣ୍ଟଗୁଡ଼ିକ"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"ସାଇନ-ଇନ ଏବଂ ଅଟୋଫିଲ ପାଇଁ ପରାମର୍ଶ"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"କୀବୋର୍ଡ, ହାପଟିକ୍ସ, ଭାଇବ୍ରେଟ, ଟାଇପିଂ"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"ଏକ୍ସଟର୍ନଲ ଡିସପ୍ଲେ, କନେକ୍ଟ ହୋଇଥିବା ଡିସପ୍ଲେ, ବିସ୍ତାରିତ ଡିସପ୍ଲେ, ଦ୍ଵିତୀୟ ଡିସପ୍ଲେ, ବିଲ୍ଟ-ଇନ ଡିସପ୍ଲେ, ଆରେଞ୍ଜ ଡିସପ୍ଲେ, ମିରର, ଡିସପ୍ଲେ ସାଇଜ, ରୋଟେସନ, ରିଜୋଲ୍ୟୁସନ, ରିଫ୍ରେସ ରେଟ"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"କେରେଟ, ଟେକ୍ସଟ କେରେଟ, ଟେକ୍ସଟ କର୍ସର, କର୍ସର, ବ୍ଲିଙ୍କିଂ, ବ୍ଲିଙ୍କ ବ୍ୟବଧାନ, ବ୍ଲିଙ୍କ ରେଟ, ଆନିମେସନ, ଆନିମେସନ ହ୍ରାସ କରିବା, ଆନିମେସନ କାଢ଼ି ଦେବା"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"ଭଲ୍ୟୁମ ଏବଂ ଭାଇବ୍ରେସନ"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">ଭଲ୍ୟୁମ ଏବଂ ହାପଟିକ୍ସ</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"ମିଡିଆ ଭଲ୍ୟୁମ"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast ଭଲ୍ୟୁମ"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"କଲ ଭଲ୍ୟୁମ"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> ବ୍ୟବହୃତ ହୋଇଛି - <xliff:g id="FREE_SPACE">%2$s</xliff:g> ଖାଲି ଅଛି"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"ଗାଢ଼ା ଥିମ୍, ଫଣ୍ଟର ଆକାର, ଉଜ୍ଜ୍ୱଳତା"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">ଡାର୍କ ଥିମ, ଫଣ୍ଟ ସାଇଜ, ସ୍ପର୍ଶ</string>
     <string name="memory_summary" msgid="8221954450951651735">"<xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> ମେମୋରୀର ହାରାହାରି <xliff:g id="USED_MEMORY">%1$s</xliff:g> ବ୍ୟବହୃତ"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> ଭାବରେ ସାଇନ ଇନ କରିଛନ୍ତି"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g> ଭର୍ସନକୁ ଅପଡେଟ ହୋଇଛି"</string>

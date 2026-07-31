@@ -1382,7 +1382,7 @@
     <string name="dream_setup_description" product="desktop">Choose what you’ll see on your screen when your device is docked. Your device may use more energy when a screen saver is used.</string>
 
     <!-- Title for Display settings [CHAR LIMIT=30] -->
-    <string name="display_settings" product="default">Display</string>
+    <string name="display_settings" product="default">Display &amp; touch</string>
 
     <!-- Sound and vibration settings screen heading. [CHAR LIMIT=30] -->
     <string name="sound_settings" product="default">Sound &amp; vibration</string>

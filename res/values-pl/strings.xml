@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Nie ustawiono"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Tapeta"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Tapeta i styl"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Ekran główny, ekran blokady"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Kolory, ikony z motywem, siatka aplikacji</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Zmień tapetę"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Dostosuj swój ekran"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Wybierz tapetę z..."</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Dostosowanie kursora, działania po kliknięciu, przewijanie"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Niedostępne, ponieważ komunikacja NFC jest wyłączona"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Najpierw zainstaluj aplikację do obsługi płatności"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Ostatnio używane aplikacje, domyślne aplikacje"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Asystent, ostatnio używane aplikacje, aplikacje domyślne</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Aplikacje w profilu służbowym nie mają dostępu do powiadomień."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Hasła i konta"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Sugestie dotyczące logowania i autouzupełniania"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"klawiatura, czujnik haptyczny, wibracje, pisanie"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"wyświetlacz zewnętrzny, podłączony wyświetlacz, rozszerzony wyświetlacz, dodatkowy wyświetlacz, wbudowany wyświetlacz, rozmieszczenie wyświetlaczy, odbicie lustrzane, rozmiar wyświetlacza, obrót, rozdzielczość, częstotliwość odświeżania"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"karetka, karetka tekstowa, kursor tekstowy, kursor, miganie, interwał migania, szybkość migania, animacja, ogranicz animację, usuń animację"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Głośność i wibracje"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Głośność i reakcje haptyczne</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Głośność multimediów"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Głośność Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Głośność połączeń"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> zajętego miejsca – <xliff:g id="FREE_SPACE">%2$s</xliff:g> wolnego miejsca"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Ciemny motyw, rozmiar czcionki, jasność"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Ciemny motyw, rozmiar czcionki, dotyk</string>
     <string name="memory_summary" msgid="8221954450951651735">"Średnie wykorzystanie pamięci: <xliff:g id="USED_MEMORY">%1$s</xliff:g> z <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>"</string>
     <string name="users_summary" msgid="8473589474976307510">"Zalogowany użytkownik: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Zaktualizowano do Androida <xliff:g id="VERSION">%1$s</xliff:g>"</string>
