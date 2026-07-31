@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Не е поставено"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Тапет"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Тапет и стил"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Почетен екран, заклучен екран"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Бои, тематски икони, мрежа со апликации</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Променете го тапетот"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Персонализирајте го екранот"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Избери тапет од"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Приспособување на курсорот, дејства со кликнување, лизгање"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Недостапно бидејќи NFC е исклучено"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"За да ја користите функцијата, прво инсталирајте апликација за плаќање"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Неодамнешни апликации, стандардни апликации"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Помошник, неодамнешни апликации, стандардни апликации</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Пристапот до известувањата не е достапен за апликации во работниот профил."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Лозинки и сметки"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Предлози за најавување и автоматско пополнување"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"тастатура, хаптика, вибрации, пишување"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"надворешен екран, поврзан екран, проширен екран, втор екран, вграден екран, подредување екрани, отсликување, големина на приказот, ротација, резолуција, стапка на освежување"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"курсор, курсор за текст, трепкање, интервал на трепкање, стапка на трепкање, анимација, намали анимација, отстрани анимација"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Јачина на звук и вибрации"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Јачина на звук и хаптика</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Јачина на звук за аудио/видео"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Јачина на звук на Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Јачина на звук за повици"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"Искористено: <xliff:g id="PERCENTAGE">%1$s</xliff:g> • Слободно: <xliff:g id="FREE_SPACE">%2$s</xliff:g>"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Темна тема, големина на фонт, осветленост"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Темна тема, големина на фонт, допир</string>
     <string name="memory_summary" msgid="8221954450951651735">"Искористен простор: просечно <xliff:g id="USED_MEMORY">%1$s</xliff:g> од <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>"</string>
     <string name="users_summary" msgid="8473589474976307510">"Најавени сте како: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Ажурирано на Android <xliff:g id="VERSION">%1$s</xliff:g>"</string>

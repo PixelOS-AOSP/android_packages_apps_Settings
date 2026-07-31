@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Non définie"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Fond d\'écran"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Fond d\'écran et style"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Accueil, écran de verrouillage"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Couleurs, icônes à thème, grille d\'applis</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Changer de fond d\'écran"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Personnaliser votre écran"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Sélect. fond d\'écran"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Personnalisation du curseur, actions au clic, défilement"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Indisponible, car le NFC est désactivé"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Pour utiliser cette option, vous devez d\'abord installer une application de paiement"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Applications récentes, applications par défaut"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Assistant, applications récentes, applications par défaut</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Les applications du profil professionnel n\'ont pas accès aux notifications."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Mots de passe et comptes"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Suggestions pour la connexion et la saisie automatique"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"clavier, technologies haptiques, vibrer, saisie"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"écran externe, écran connecté, écran étendu, deuxième écran, écran intégré, organiser les écrans, dupliquer, taille de l\'écran, rotation, résolution, fréquence d\'actualisation"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"curseur, curseur de texte, curseur de saisie, clignotement, intervalle de clignotement, fréquence de clignotement, animation, réduire l\'animation, supprimer l\'animation"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Volume et vibreur"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Volume et technologies haptiques</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Volume des contenus multimédias"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Volume Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Volume des appels"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> utilisés - <xliff:g id="FREE_SPACE">%2$s</xliff:g> disponibles"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Thème sombre, taille de la police, luminosité"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Thème sombre, taille de police, commandes tactiles</string>
     <string name="memory_summary" msgid="8221954450951651735">"Utilisation d\'environ <xliff:g id="USED_MEMORY">%1$s</xliff:g> sur <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> de mémoire"</string>
     <string name="users_summary" msgid="8473589474976307510">"Connecté en tant que \"<xliff:g id="USER_NAME">%1$s</xliff:g>\""</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g> a été installé"</string>

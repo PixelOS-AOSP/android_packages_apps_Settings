@@ -713,7 +713,7 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"Aitavad filtreerida selle seadme teatud rakendustes ja brauserites vulgaarset sisu. Vulgaarset sisu võidakse siiski kuvada teistes rakendustes, seadmetes või brauserites."</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"Valige, mida oma ekraanikuval näete, kui teie tahvelarvuti on dokitud. Kui kasutate ekraanisäästjat, võib teie seade rohkem energiat tarbida."</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"Valige, mida oma ekraanikuval näete, kui teie seade on dokitud. Kui kasutate ekraanisäästjat, võib teie seade rohkem energiat tarbida."</string>
-    <string name="display_settings" product="default" msgid="3387606354749476666">"Kuvamine"</string>
+    <string name="display_settings" product="default" msgid="3387606354749476666">Kuvamine ja puudutamine</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"Heli ja vibreerimine"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"Heli"</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"Näoga avamise lubamine"</string>

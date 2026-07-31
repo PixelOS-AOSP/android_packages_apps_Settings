@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Не задано"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Обои"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Обои и стиль"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Главный экран, заблокированный экран"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Цвета, тематические значки, сетка приложений</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Обои"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Выберите обои для экрана"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Установка обоев"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Действия при нажатии, настройка указателя и прокрутка"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Недоступно, так как функция NFC выключена"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Для работы функции необходимо установить платежное приложение"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Недавние приложения, приложения по умолчанию"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Ассистент, недавние приложения, приложения по умолчанию</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Приложениям в рабочем профиле нельзя предоставить доступ к уведомлениям."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Пароли и аккаунты"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Подсказки при входе и автозаполнение"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"клавиатура, тактильная обратная связь, вибрация, ввод текста"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"внешний экран, подключенный экран, дополнительный экран, второй экран, встроенный экран, упорядочить экраны, дублирование, масштаб изображения, поворот, разрешение, частота обновления"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"каретка, текстовая каретка, текстовый курсор, курсор, мигание, интервал мигания, частота мигания, анимация, уменьшить анимацию, отключить анимацию"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Громкость и вибрация"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Громкость и тактильная обратная связь</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Музыка, видео, игры"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Громкость Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Громкость разговора"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"Занято: <xliff:g id="PERCENTAGE">%1$s</xliff:g>. Свободно: <xliff:g id="FREE_SPACE">%2$s</xliff:g>."</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Тёмная тема, размер шрифта, яркость"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Тёмная тема, размер шрифта, сенсорное управление</string>
     <string name="memory_summary" msgid="8221954450951651735">"Используется в среднем <xliff:g id="USED_MEMORY">%1$s</xliff:g> из <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>"</string>
     <string name="users_summary" msgid="8473589474976307510">"Вы вошли как <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Система обновлена до Android <xliff:g id="VERSION">%1$s</xliff:g>"</string>

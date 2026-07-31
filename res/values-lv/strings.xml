@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"Nav iestatīts"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"Fona tapete"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"Fona tapete un stils"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"Sākuma ekrāns, bloķēšanas ekrāns"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">Krāsas, motīvu ikonas, lietotņu režģis</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Mainīt fona tapeti"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Ekrāna personalizēšana"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Fona tapetes izvēle no"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"Kursora pielāgošana, klikšķu darbības, ritināšana"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"Nav pieejams, jo tehnoloģija NFC ir izslēgta"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Lai to izmantotu, vispirms instalējiet maksājumu lietotni."</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"Pēdējās izmantotās lietotnes, noklusējuma lietotnes"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Asistents, pēdējās izmantotās lietotnes, noklusējuma lietotnes</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"Piekļuve paziņojumiem nav pieejama darba profila lietotnēm."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"Paroles un konti"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"Pierakstīšanās un automātiskās aizpildes ieteikumi"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"tastatūra, haptiskā tehnoloģija, vibrācija, rakstīšana"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"ārējais displejs, pievienotais displejs, paplašinātais displejs, otrais displejs, iebūvētais displejs, displeju sakārtošana, spoguļošana, displeja izmērs, pagriešana, izšķirtspēja, atsvaidzināšanas biežums"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"ievietošanas punkts, teksta ievietošanas punkts, teksta kursors, kursors, mirgošana, mirgošanas intervāls, mirgošanas biežums, animācija, samazināt animāciju, noņemt animāciju"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"Skaļums un vibrācija"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">Skaļums un haptiskā tehnoloģija</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"Multivides skaļums"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast skaļums"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Zvana skaļums"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"Izmantotā vieta: <xliff:g id="PERCENTAGE">%1$s</xliff:g>; pieejamā vieta: <xliff:g id="FREE_SPACE">%2$s</xliff:g>"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"Tumšais motīvs, fonta lielums, spilgtums"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">Tumšais motīvs, fonta lielums, skārienievade</string>
     <string name="memory_summary" msgid="8221954450951651735">"Izmantotais atmiņas apjoms: vidēji <xliff:g id="USED_MEMORY">%1$s</xliff:g> no <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>"</string>
     <string name="users_summary" msgid="8473589474976307510">"Pierakstījies kā: <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Atjaunināta uz Android <xliff:g id="VERSION">%1$s</xliff:g>"</string>

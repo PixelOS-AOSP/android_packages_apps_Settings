@@ -3384,7 +3384,7 @@
     <!-- Styles & Wallpapers settings title [CHAR LIMIT=30] -->
     <string name="style_and_wallpaper_settings_title">Wallpaper &amp; style</string>
     <!-- Summary for the top level wallpapers settings [CHAR LIMIT=NONE]-->
-    <string name="wallpaper_dashboard_summary">Home, lock screen</string>
+    <string name="wallpaper_dashboard_summary">Colors, themed icons, app grid</string>
     <!-- Wallpaper suggestion title [CHAR LIMIT=46] -->
     <string name="wallpaper_suggestion_title">Change wallpaper</string>
     <!-- Wallpaper suggestion summary [CHAR LIMIT=55] -->
@@ -8755,7 +8755,7 @@
     <!-- Summary for Tap & pay settings, explaning a few important settings under it [CHAR LIMIT=NONE]-->
     <string name="nfc_and_payment_settings_no_payment_installed_summary">To use, first install a payment app</string>
     <!-- Summary for Apps & Notification settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
-    <string name="app_and_notification_dashboard_summary">Recent apps, default apps</string>
+    <string name="app_and_notification_dashboard_summary">Assistant, recent apps, default apps</string>
     <!-- Toast shown when an app in the work profile attempts to open notification settings. The apps in the work profile cannot access notification settings. [CHAR LIMIT=NONE] -->
     <string name="notification_settings_work_profile">Notification access is not available for apps in the work profile.</string>
     <!-- Title for setting tile leading to saved autofill passwords, autofill, and account settings [CHAR LIMIT=40]-->
@@ -8995,7 +8995,7 @@
     <string name="keywords_text_cursor_blink_rate">caret, text caret, text cursor, cursor, blinking, blink interval, blink rate, animation, reduce animation, remove animation</string>
 
     <!-- Summary for sound settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
-    <string name="sound_dashboard_summary">Volume and vibration</string>
+    <string name="sound_dashboard_summary">Volume and haptics</string>
 
     <!-- Sound: Title for the option managing media volume. [CHAR LIMIT=30] -->
     <string name="media_volume_option_title">Media volume</string>
@@ -11583,7 +11583,7 @@
     <string name="storage_toplevel_summary"><xliff:g id="percentage" example="54%">%1$s</xliff:g> used - <xliff:g id="free_space" example="32GB">%2$s</xliff:g> free</string>
 
     <!-- Summary for Display settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
-    <string name="display_dashboard_summary">Dark theme, font size, brightness</string>
+    <string name="display_dashboard_summary">Dark theme, font size, touch</string>
 
     <!-- Summary of memory screen [CHAR LIMIT=NONE] -->
     <string name="memory_summary">Avg <xliff:g id="used_memory" example="1.7GB">%1$s</xliff:g> of <xliff:g id="total_memory" example="2GB">%2$s</xliff:g> memory used</string>

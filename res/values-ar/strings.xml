@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"لم يتم تحديد اقتراح مطابق."</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"الخلفية"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"الخلفية والأسلوب"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"الشاشة الرئيسية وشاشة القفل"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">الألوان، والرموز المستوحاة من موضوع معيّن، وشبكة التطبيقات</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"تغيير الخلفية"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"تخصيص شاشتك"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"اختيار خلفية من"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"تخصيص المؤشر، إجراءات النقر، الانتقال"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"‏الإعداد غير متاح بسبب إيقاف تقنية الاتصال القصير المدى (NFC)"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"لاستخدام هذه الميزة، يجب تثبيت تطبيق دفع أولاً."</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"التطبيقات المُستخدِمة مؤخرًا، التطبيقات التلقائية"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">‏\"مساعد Google\" والتطبيقات المُستخدمة مؤخرًا والتطبيقات التلقائية</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"لا تتوفر إمكانية الدخول إلى الإشعارات للتطبيقات في ملف العمل."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"كلمات المرور والحسابات"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"اقتراحات تسجيل الدخول وميزة \"الملء التلقائي\""</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"لوحة المفاتيح، تقنية اللمس، الاهتزاز، الكتابة"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"شاشة خارجية، شاشة متصلة، شاشة ممتدة، شاشة ثانية، شاشة مدمَجة، ترتيب الشاشات، نسخ مطابق، حجم الشاشة، تدوير، درجة الدقة، معدّل التحديث"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"علامة الإقحام، علامة إقحام النص، مؤشر النص، المؤشر، وميض، فاصل الوميض، معدّل الوميض، صورة متحركة، تقليل الصور المتحركة، إزالة الصور المتحركة"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"مستوى الصوت والاهتزاز"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">مستوى الصوت وتقنية اللمس</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"مستوى صوت الوسائط"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"‏مستوى صوت Google Cast"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"مستوى صوت المكالمة"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"‫<xliff:g id="PERCENTAGE">%1$s</xliff:g> مستخدَمة - <xliff:g id="FREE_SPACE">%2$s</xliff:g> فارغة"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"المظهر الداكن وحجم الخط والسطوع"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">المظهر الداكن وحجم الخط وإعدادات اللمس</string>
     <string name="memory_summary" msgid="8221954450951651735">"تم استخدام متوسط ذاكرة بحجم <xliff:g id="USED_MEMORY">%1$s</xliff:g> من إجمالي <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>"</string>
     <string name="users_summary" msgid="8473589474976307510">"تم تسجيل الدخول باسم <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"‏تم التحديث إلى الإصدار <xliff:g id="VERSION">%1$s</xliff:g> من Android."</string>

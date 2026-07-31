@@ -713,7 +713,7 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"Palīdziet filtrēt necenzētu saturu dažās lietotnēs un pārlūkprogrammās šajā ierīcē. Necenzēts saturs joprojām var tikt rādīts citās lietotnēs, ierīcēs vai pārlūkprogrammās."</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"Izvēlieties, kas būs redzams ekrānā, kad planšetdators būs dokots. Ja izmantosiet ekrānsaudzētāju, ierīce var patērēt vairāk enerģijas."</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"Izvēlieties, kas būs redzams ekrānā, kad ierīce būs dokota. Ja izmantosiet ekrānsaudzētāju, ierīce var patērēt vairāk enerģijas."</string>
-    <string name="display_settings" product="default" msgid="3387606354749476666">"Attēlojums"</string>
+    <string name="display_settings" product="default" msgid="3387606354749476666">Attēlojums un skārienievade</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"Skaņa un vibrācija"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"Skaņa"</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"Autorizācijas pēc sejas atļaušana"</string>

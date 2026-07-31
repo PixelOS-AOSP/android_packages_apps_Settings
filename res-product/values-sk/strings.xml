@@ -713,7 +713,7 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"Môžete filtrovať explicitný obsah v niektorých aplikáciách a prehliadačoch v tomto zariadení. Explicitný obsah sa môže naďalej zobrazovať v iných aplikáciách, zariadeniach alebo prehliadačoch."</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"Vyberte, čo sa bude zobrazovať na vašej obrazovke po vložení tabletu do doku. Zariadenie môže pri používaní šetriča obrazovky spotrebúvať viac energie."</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"Vyberte, čo sa bude zobrazovať na vašej obrazovke po vložení zariadenia do doku. Zariadenie môže pri používaní šetriča obrazovky spotrebúvať viac energie."</string>
-    <string name="display_settings" product="default" msgid="3387606354749476666">"Obrazovka"</string>
+    <string name="display_settings" product="default" msgid="3387606354749476666">Obrazovka a dotyk</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"Zvuk a vibrácie"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"Zvuk"</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"Povoľte odomknutie tvárou"</string>
