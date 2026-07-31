@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"සකසා නැත"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"වෝල්පේපරය"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"වෝල්පේපරය සහ මෝස්තරය"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"මුල් පිටුව, අගුලු තිරය"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">වර්ණ, තේමා නිරූපක, යෙදුම් ජාලකය</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"බිතුපත වෙනස් කරන්න"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"ඔබේ තිරය පෞද්ගලීකරණය කරන්න"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"වෙතින් වෝල්පේපරය තෝරන්න"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"කර්සර අභිරුචිකරණය, ක්ලික් කිරීමේ ක්‍රියා, අනුචලනය"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC ක්‍රියාවිරහිත නිසා ලබා ගත නොහැකිය"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"භාවිත කිරීමට, පළමුව ගෙවීම් යෙදුමක් ස්ථාපනය කරන්න"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"මෑත යෙදුම්, පෙරනිමි යෙදුම්"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">සහකරු, මෑත යෙදුම්, පෙරනිමි යෙදුම්</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"කාර්යාල පැතිකඩ තුළ යෙදුම් සඳහා දැනුම්දීම් ප්‍රවේශය ලබා ගත නොහැකිය"</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"මුරපද සහ ගිණුම්"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"පුරනය වීම සහ ස්වයං පිරවීම සඳහා යෝජනා"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"යතුරු පුවරුව, ස්පර්ශ, කම්පනය, ටයිප් කිරීම"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"බාහිර සංදර්ශකය, සම්බන්ධිත සංදර්ශකය, දිගු කළ සංදර්ශකය, දෙවන සංදර්ශකය, ආවේණික සංදර්ශකය, සංදර්ශක සැකසීම, දර්පණය, සංදර්ශක තරම, කරකැවීම, විභේදනය, නැවුම් කිරීමේ අනුපාතය"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"කැරට්, පෙළ කැරට්, පෙළ කර්සරය, කර්සරය, දැල්වීම, දැල්වීම් පරතරය, දැල්වීම් අනුපාතය, සජීවීකරණය, සජීවීකරණය අඩු කිරීම, සජීවීකරණය ඉවත් කිරීම"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"හඬ පරිමාව සහ කම්පනය"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">හඬ පරිමාව සහ ස්පර්ශ</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"මාධ්‍ය ශබ්දය"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast හඬ පරිමාව"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"ඇමතුම් ශබ්දය"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> භාවිත කරන ලදී - <xliff:g id="FREE_SPACE">%2$s</xliff:g> හිස්ය"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"අඳුරු තේමාව, ෆොන්ට තරම, දීප්තිය"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">අඳුරු තේමාව, අකුරු තරම, ස්පර්ශය</string>
     <string name="memory_summary" msgid="8221954450951651735">"<xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> මතකයෙන් සාමාන්‍යයෙන් <xliff:g id="USED_MEMORY">%1$s</xliff:g>ක් භාවිත කෙරේ"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> ලෙස පුරන ලදී"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g> වෙත යාවත්කාලීන කරන ලදි"</string>

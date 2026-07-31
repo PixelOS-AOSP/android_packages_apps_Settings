@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"సెట్ చేయనివి"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"వాల్‌పేపర్"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"వాల్‌పేపర్ &amp; స్టయిల్"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"మొదటి ట్యాబ్, లాక్ స్క్రీన్"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">కలర్స్, థీమ్‌కు తగిన చిహ్నాలు, యాప్ గ్రిడ్</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"వాల్‌పేపర్‌ను మార్చండి"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"మీ స్క్రీన్‌ను వ్యక్తిగతీకరించండి"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"వీటిలో వాల్‌పేపర్‌ను ఎంచుకోండి"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"కర్సర్ అనుకూలంగా మార్చడం, క్లిక్ చర్యలు, స్క్రోలింగ్"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC ఆఫ్‌లో ఉన్నందున అందుబాటులో లేదు"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"ఉపయోగించాలంటే, ముందు ఒక పేమెంట్ యాప్‌ను ఇన్‌స్టాల్ చేయండి"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"ఇటీవలి యాప్‌లు, ఆటోమేటిక్ యాప్‌లు"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Assistant, ఇటీవలి యాప్‌లు, ఆటోమేటిక్‌ యాప్‌లు</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"కార్యాలయ ప్రొఫైల్‌లో ఉన్న యాప్‌లకు సంబంధించి నోటిఫికేషన్ యాక్సెస్ అందుబాటులో లేదు."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"పాస్‌వర్డ్‌లు, ఖాతాలు"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"సైన్ ఇన్ &amp; ఆటోఫిల్ సూచనలు"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"కీబోర్డ్, స్పర్శ ప్రతిస్పందన టెక్నాలజీ, వైబ్రేట్, టైపింగ్"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"బాహ్య డిస్‌ప్లే, కనెక్ట్ చేయబడిన డిస్‌ప్లే, విస్తరించిన డిస్‌ప్లే, రెండవ డిస్‌ప్లే, బిల్ట్-ఇన్ డిస్‌ప్లే, డిస్‌ప్లేలను అమర్చడం, మిర్రర్, డిస్‌ప్లే సైజ్, రొటేషన్, రిజల్యూషన్, రిఫ్రెష్ రేటు"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"కేరెట్, టెక్స్ట్ కేరెట్, టెక్స్ట్ కర్సర్, కర్సర్, బ్లింకింగ్, బ్లింక్ ఇంటర్‌వెల్, బ్లింక్ రేట్, యానిమేషన్, యానిమేషన్‌ను తగ్గించండి, యానిమేషన్‌ను తీసివేయండి"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"వాల్యూమ్, వైబ్రేషన్"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">వాల్యూమ్ &amp; స్పర్శ ప్రతిస్పందన టెక్నాలజీ (హ్యాప్టిక్స్)</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"మీడియా వాల్యూమ్"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast వాల్యూమ్"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"కాల్ వాల్యూమ్"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> ఉపయోగించారు - <xliff:g id="FREE_SPACE">%2$s</xliff:g> ఖాళీగా ఉంది"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"డార్క్ థీమ్‌, ఫాంట్ సైజ్, బ్రైట్‌నెస్"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">డార్క్ థీమ్, ఫాంట్ సైజ్, టచ్</string>
     <string name="memory_summary" msgid="8221954450951651735">"సగటున <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>లో <xliff:g id="USED_MEMORY">%1$s</xliff:g> మెమరీ వినియోగించబడింది"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g>‌గా సైన్ ఇన్ చేశారు"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g>కు అప్‌డేట్ చేయబడింది"</string>

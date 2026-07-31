@@ -713,7 +713,7 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"ਇਹ ਇਸ ਡੀਵਾਈਸ \'ਤੇ ਕੁਝ ਐਪਾਂ ਅਤੇ ਬ੍ਰਾਊਜ਼ਰਾਂ \'ਤੇ ਅਸ਼ਲੀਲ ਸਮੱਗਰੀ ਨੂੰ ਫਿਲਟਰ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਨ। ਅਸ਼ਲੀਲ ਸਮੱਗਰੀ ਹਾਲੇ ਵੀ ਹੋਰ ਐਪਾਂ, ਡੀਵਾਈਸਾਂ ਜਾਂ ਬ੍ਰਾਊਜ਼ਰਾਂ \'ਤੇ ਦਿਖ ਸਕਦੀ ਹੈ।"</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"ਚੁਣੋ ਕਿ ਤੁਹਾਡਾ ਟੈਬਲੈੱਟ ਡੌਕ ਹੋਣ \'ਤੇ ਤੁਸੀਂ ਆਪਣੀ ਸਕ੍ਰੀਨ \'ਤੇ ਕੀ ਦੇਖਣਾ ਚਾਹੁੰਦੇ ਹੋ। ਸਕ੍ਰੀਨ ਸੇਵਰ ਦੀ ਵਰਤੋਂ ਹੋਣ \'ਤੇ ਤੁਹਾਡਾ ਡੀਵਾਈਸ ਜ਼ਿਆਦਾ ਊਰਜਾ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦਾ ਹੈ।"</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"ਚੁਣੋ ਕਿ ਤੁਹਾਡਾ ਡੀਵਾਈਸ ਡੌਕ ਹੋਣ \'ਤੇ ਤੁਸੀਂ ਆਪਣੀ ਸਕ੍ਰੀਨ \'ਤੇ ਕੀ ਦੇਖਣਾ ਚਾਹੁੰਦੇ ਹੋ। ਸਕ੍ਰੀਨ ਸੇਵਰ ਦੀ ਵਰਤੋਂ ਹੋਣ \'ਤੇ ਤੁਹਾਡਾ ਡੀਵਾਈਸ ਜ਼ਿਆਦਾ ਊਰਜਾ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦਾ ਹੈ।"</string>
-    <string name="display_settings" product="default" msgid="3387606354749476666">"ਡਿਸਪਲੇ"</string>
+    <string name="display_settings" product="default" msgid="3387606354749476666">ਡਿਸਪਲੇ ਅਤੇ ਟੱਚ</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"ਧੁਨੀ ਅਤੇ ਥਰਥਰਾਹਟ"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"ਧੁਨੀ"</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"ਫ਼ੇਸ ਅਣਲਾਕ ਨੂੰ ਇਜਾਜ਼ਤ ਦਿਓ"</string>

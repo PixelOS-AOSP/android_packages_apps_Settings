@@ -1431,7 +1431,7 @@
     <string name="screen_timeout_summary_not_set" msgid="5107680774964178875">"सेट केलेले नाही"</string>
     <string name="wallpaper_settings_title" msgid="5635129851136006383">"वॉलपेपर"</string>
     <string name="style_and_wallpaper_settings_title" msgid="2232042809407308946">"वॉलपेपर आणि शैली"</string>
-    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">"होम, लॉक स्‍क्रीन"</string>
+    <string name="wallpaper_dashboard_summary" msgid="2324472863981057118">रंग, थीम असलेले आयकन, अ‍ॅप ग्रिड</string>
     <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"वॉलपेपर बदला"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"तुमची स्क्रीन वैयक्तीकृत करा"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"यातून वॉलपेपर निवडा"</string>
@@ -3645,7 +3645,7 @@
     <string name="device_trackpad_settings_summary" msgid="1658492396087895698">"कर्सर कस्टमायझेशन, क्लिक कृती, स्क्रोलिंग"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC बंद असल्याने उपलब्ध नाही"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"वापरण्यासाठी आधी एक पेमेंट अ‍ॅप इंस्टॉल करा"</string>
-    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"अलीकडील अ‍ॅप्स, डीफॉल्ट अ‍ॅप्स"</string>
+    <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">Assistant, अलीकडील अ‍ॅप्स, डीफॉल्ट अ‍ॅप्स</string>
     <string name="notification_settings_work_profile" msgid="6076211850526353975">"कार्य प्रोफाइलमधील ॲप्ससाठी सूचनेचा अ‍ॅक्सेस उपलब्ध नाही."</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"पासवर्ड आणि खाती"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"साइन-इन आणि ऑटोफिलसाठी सूचना"</string>
@@ -3773,7 +3773,7 @@
     <string name="keywords_keyboard_vibration" msgid="5870649353180725920">"कीबोर्ड, हॅप्टिक्स, व्हायब्रेट, टायपिंग"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"बाह्य डिस्प्ले, कनेक्ट केलेला डिस्प्ले, एक्स्टेंडेड डिस्प्ले, दुसरा डिस्प्ले, बिल्ट-इन डिस्प्ले, अरेंज केलेला डिस्प्ले, मिरर, डिस्प्लेचा आकार, रोटेशन, रेझोल्यूशन, रिफ्रेश रेट"</string>
     <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"कॅरेट, मजकूर कॅरेट, मजकूर कर्सर, कर्सर, ब्लिंकिंग, ब्लिंक इंटरव्हल, ब्लिंक रेट, ॲनिमेशन, ॲनिमेशन कमी करा, ॲनिमेशन काढून टाका"</string>
-    <string name="sound_dashboard_summary" msgid="8254699132423665654">"व्हॉल्यूम आणि व्हायब्रेशन"</string>
+    <string name="sound_dashboard_summary" msgid="8254699132423665654">व्हॉल्यूम आणि हॅप्टिक</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"मीडिया व्हॉल्यूम"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast व्हॉल्यूम"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"कॉल व्हॉल्यूम"</string>
@@ -4677,7 +4677,7 @@
     <!-- no translation found for storage_percentage_format (420113039071073589) -->
     <skip />
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> वापरले आहे - <xliff:g id="FREE_SPACE">%2$s</xliff:g> मोकळे आहे"</string>
-    <string name="display_dashboard_summary" msgid="1599453894989339454">"गडद थीम, फॉंटचा आकार, ब्राइटनेस"</string>
+    <string name="display_dashboard_summary" msgid="1599453894989339454">गडद थीम, फॉंटचा आकार, स्पर्श</string>
     <string name="memory_summary" msgid="8221954450951651735">"<xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> पैकी सरासरी <xliff:g id="USED_MEMORY">%1$s</xliff:g> मेमरी वापरली"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> म्हणून साइन इन केले"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g> वर अपडेट केले"</string>

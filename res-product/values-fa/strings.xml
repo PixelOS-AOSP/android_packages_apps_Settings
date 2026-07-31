@@ -713,7 +713,7 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"به فیلتر کردن محتوای صریح در برخی‌از برنامه‌ها و مرورگرهای این دستگاه کمک می‌کند. ممکن است محتوای صریح همچنان در سایر برنامه‌ها، دستگاه‌ها، یا مرورگرها نمایش داده شود."</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"انتخاب کنید وقتی‌که رایانه لوحی روی پایه اتصال قرار می‌گیرد چه چیزی روی صفحه‌نمایش نشان داده شود. هنگام استفاده از «محافظ صفحه‌نمایش»، دستگاه ممکن است انرژی بیشتری مصرف کند."</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"انتخاب کنید وقتی‌که دستگاه روی پایه اتصال قرار می‌گیرد چه چیزی روی صفحه‌نمایش نشان داده شود. هنگام استفاده از «محافظ صفحه‌نمایش»، دستگاه ممکن است انرژی بیشتری مصرف کند."</string>
-    <string name="display_settings" product="default" msgid="3387606354749476666">"نمایشگر"</string>
+    <string name="display_settings" product="default" msgid="3387606354749476666">نمایشگر و لمس</string>
     <string name="sound_settings" product="default" msgid="1962377912191328861">"صدا و لرزش"</string>
     <string name="sound_settings" product="desktop" msgid="9077346630096747379">"صدا"</string>
     <string name="security_settings_face_enroll_consent_introduction_title" product="default" msgid="4756935885820420260">"مجاز کردن قفل‌گشایی با چهره"</string>
