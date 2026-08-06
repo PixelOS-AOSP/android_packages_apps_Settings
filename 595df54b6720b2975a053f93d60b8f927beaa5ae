@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2745a7c4_a62e9d10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-08-06T09:39:58Z",
+      "side": 1,
+      "message": "https://review.pixelos.net/c/PixelOS-AOSP/android_packages_apps_Settings/+/9048/comments/3f7893aa_ecb71ea2",
+      "revId": "595df54b6720b2975a053f93d60b8f927beaa5ae",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
