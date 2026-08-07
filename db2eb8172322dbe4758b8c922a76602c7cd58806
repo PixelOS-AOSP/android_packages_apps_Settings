@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9685f6c9_fb73bf03",
+        "filename": "src/com/google/android/settings/fuelgauge/batterysaver/AdaptiveBatteryScreen.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-08-07T07:56:35Z",
+      "side": 1,
+      "message": "context.resources.getBoolean(com.android.internal.R.bool.config_smart_battery_available)",
+      "range": {
+        "startLine": 107,
+        "startChar": 38,
+        "endLine": 107,
+        "endChar": 48
+      },
+      "revId": "db2eb8172322dbe4758b8c922a76602c7cd58806",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
