@@ -16,6 +16,24 @@
       "message": "squash merge similar changes to their parent commit(change that introduces it).",
       "revId": "ea0a95b22448e85439d17d9c39290b70a335bf27",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00417639_6f99d227",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-08-07T06:56:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f7893aa_ecb71ea2",
+      "revId": "ea0a95b22448e85439d17d9c39290b70a335bf27",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
