@@ -16,6 +16,24 @@
       "message": "I dont think we need this anymore",
       "revId": "af06da485eaee18c570cafc2a0effb4b88bd3353",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f1410c8_9aa1b7ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2026-08-07T06:36:49Z",
+      "side": 1,
+      "message": "Dropped",
+      "parentUuid": "7e275b57_cf19232d",
+      "revId": "af06da485eaee18c570cafc2a0effb4b88bd3353",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
