@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4676ae30_06aa7496",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-08-08T04:00:58Z",
+      "side": 1,
+      "message": "add these in AndroidManifest:\n\n```\n        \u003c!-- Battery saver --\u003e\n        \u003cactivity\n            android:name\u003d\"com.google.android.settings.fuelgauge.batterysaver.AdaptiveBatteryTrampoline\"\n            android:label\u003d\"@string/smart_battery_title\"\n            android:exported\u003d\"true\"\u003e\n            \u003cintent-filter\u003e\n                \u003caction android:name\u003d\"com.google.android.settings.fuelgauge.batterysaver.AdaptiveBatteryTrampoline\"/\u003e\n                \u003ccategory android:name\u003d\"android.intent.category.DEFAULT\"/\u003e\n            \u003c/intent-filter\u003e\n            \u003cmeta-data android:name\u003d\"com.android.settings.HIGHLIGHT_MENU_KEY\"\n                android:value\u003d\"@string/menu_key_battery\"/\u003e\n            \u003cmeta-data android:name\u003d\"com.android.settings.PRIMARY_PROFILE_CONTROLLED\"\n                android:value\u003d\"true\"/\u003e\n        \u003c/activity\u003e\n\n        \u003cactivity\n            android:name\u003d\"com.google.android.settings.fuelgauge.batterysaver.BatterySaverScheduleTrampoline\"\n            android:label\u003d\"@string/battery_schedule_title\"\n            android:exported\u003d\"true\"\u003e\n            \u003cintent-filter\u003e\n                \u003caction android:name\u003d\"com.google.android.settings.fuelgauge.batterysaver.BatterySaverScheduleTrampoline\"/\u003e\n                \u003ccategory android:name\u003d\"android.intent.category.DEFAULT\"/\u003e\n            \u003c/intent-filter\u003e\n            \u003cmeta-data android:name\u003d\"com.android.settings.HIGHLIGHT_MENU_KEY\"\n                android:value\u003d\"@string/menu_key_battery\"/\u003e\n            \u003cmeta-data android:name\u003d\"com.android.settings.PRIMARY_PROFILE_CONTROLLED\"\n                android:value\u003d\"true\"/\u003e\n        \u003c/activity\u003e\n```",
+      "revId": "174a33948356b2c140e57325f35b7c851e6293cb",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
