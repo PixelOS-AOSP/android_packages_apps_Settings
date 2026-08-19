@@ -19,9 +19,8 @@ import com.android.internal.widget.PasswordValidationError;
 import com.android.settings.R;
 import com.android.settings.password.ChooseLockPassword;
 import com.android.settings.password.ChooseLockPassword.ChooseLockPasswordFragment.PasswordValidationErrorConverter;
-import com.google.android.setupcompat.template.FooterBarMixin;
-import com.google.android.setupcompat.template.FooterButton;
-import com.google.android.setupdesign.GlifLayout;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.List;
 import java.util.Objects;
@@ -36,24 +35,31 @@ public class DuressPasswordSetupActivity extends DuressPasswordActivity
 
     enum DuressCredentialType {
         PIN(LockscreenCredential::createPin,
-                R.id.pin_input, R.id.pin_input_confirmation,
+                R.id.pin_input, R.id.pin_input_layout,
+                R.id.pin_input_confirmation, R.id.pin_confirmation_layout,
                 R.string.lockpassword_confirm_pins_dont_match),
         PASSWORD(LockscreenCredential::createPassword,
-                R.id.password_input, R.id.password_input_confirmation,
+                R.id.password_input, R.id.password_input_layout,
+                R.id.password_input_confirmation, R.id.password_confirmation_layout,
                 R.string.lockpassword_confirm_passwords_dont_match),
         ;
 
         final Function<String, LockscreenCredential> credenialCreator;
         final @IdRes int mainInputId;
+        final @IdRes int mainInputLayoutId;
         final @IdRes int confirmationInputId;
+        final @IdRes int confirmationInputLayoutId;
         final @StringRes int confirmationMismatchText;
 
         DuressCredentialType(Function<String, LockscreenCredential> credenialCreator,
-                             int mainInputId, int confirmationInputId,
+                             int mainInputId, int mainInputLayoutId,
+                             int confirmationInputId, int confirmationInputLayoutId,
                              int confirmationMismatchText) {
             this.credenialCreator = credenialCreator;
             this.mainInputId = mainInputId;
+            this.mainInputLayoutId = mainInputLayoutId;
             this.confirmationInputId = confirmationInputId;
+            this.confirmationInputLayoutId = confirmationInputLayoutId;
             this.confirmationMismatchText = confirmationMismatchText;
         }
 
@@ -69,29 +75,15 @@ public class DuressPasswordSetupActivity extends DuressPasswordActivity
 
         setContentView(R.layout.duress_password_setup);
 
-        GlifLayout layout = requireViewById(R.id.glif_layout);
         int headerText = getIntent().getIntExtra(EXTRA_TITLE_TEXT, 0);
         isUpdate = headerText == R.string.duress_pwd_action_update;
-        layout.setHeaderText(headerText);
-        adjustDescriptionStyle(layout);
+        setTitle(headerText);
 
-        FooterBarMixin footerBar = layout.getMixin(FooterBarMixin.class);
-        {
-            var b = new FooterButton.Builder(this);
-            b.setText(isUpdate ? R.string.duress_pwd_update_button : R.string.duress_pwd_add_button);
-            b.setButtonType(FooterButton.ButtonType.DONE);
-            b.setListener(v -> save());
-            b.setTheme(com.google.android.setupdesign.R.style.SudGlifButton_Primary);
-            footerBar.setPrimaryButton(b.build());
-        }
-        {
-            var b = new FooterButton.Builder(this);
-            b.setText(R.string.duress_pwd_cancel_button);
-            b.setButtonType(FooterButton.ButtonType.CANCEL);
-            b.setListener(v -> finish());
-            b.setTheme(com.google.android.setupdesign.R.style.SudGlifButton_Secondary);
-            footerBar.setSecondaryButton(b.build());
-        }
+        MaterialButton saveButton = requireViewById(R.id.duress_password_save);
+        saveButton.setText(isUpdate ? R.string.duress_pwd_update_button
+                : R.string.duress_pwd_add_button);
+        saveButton.setOnClickListener(v -> save());
+        requireViewById(R.id.duress_password_cancel).setOnClickListener(v -> finish());
         for (var ct : DuressCredentialType.values()) {
             for (int id : new int[] { ct.mainInputId, ct.confirmationInputId }) {
                 EditText ed = requireViewById(id);
@@ -182,7 +174,8 @@ public class DuressPasswordSetupActivity extends DuressPasswordActivity
             var pvec = new PasswordValidationErrorConverter(this, c.isPassword(), ChooseLockPassword.ChooseLockPasswordFragment.ProfileType.None, errors);
             error = String.join("\n", pvec.convertErrorCodeToMessages());
         }
-        ed.setError(error);
+        TextInputLayout inputLayout = requireViewById(ct.mainInputLayoutId);
+        inputLayout.setError(error);
         return res;
     }
 
@@ -191,7 +184,8 @@ public class DuressPasswordSetupActivity extends DuressPasswordActivity
         EditText confirmation = requireViewById(ct.confirmationInputId);
 
         boolean res = main.getText().toString().equals(confirmation.getText().toString());
-        confirmation.setError(res ? null : getText(ct.confirmationMismatchText));
+        TextInputLayout confirmationLayout = requireViewById(ct.confirmationInputLayoutId);
+        confirmationLayout.setError(res ? null : getText(ct.confirmationMismatchText));
         return res;
     }
 }

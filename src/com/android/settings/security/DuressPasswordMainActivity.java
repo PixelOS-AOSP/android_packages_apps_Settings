@@ -5,28 +5,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import androidx.annotation.DrawableRes;
 import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 
 import com.android.internal.widget.LockPatternUtils;
 import com.android.internal.widget.LockscreenCredential;
 import com.android.settings.R;
 import com.android.settings.password.ChooseLockSettingsHelper;
-import com.google.android.setupdesign.GlifRecyclerLayout;
-import com.google.android.setupdesign.items.IItem;
-import com.google.android.setupdesign.items.Item;
-import com.google.android.setupdesign.items.ItemGroup;
-import com.google.android.setupdesign.items.RecyclerItemAdapter;
+import com.google.android.material.button.MaterialButton;
 
-import java.util.Objects;
-
-public class DuressPasswordMainActivity extends DuressPasswordActivity implements RecyclerItemAdapter.OnItemSelectedListener {
+public class DuressPasswordMainActivity extends DuressPasswordActivity {
     private static final String TAG = DuressPasswordMainActivity.class.getSimpleName();
     private static final String KEY_USER_CREDENTIAL = "user_credential";
     private static final String KEY_HAS_ASKED_FOR_USER_CREDENTIALS = "asked_for_user_credentials";
 
-    private GlifRecyclerLayout layout;
+    private MaterialButton addButton;
+    private MaterialButton updateButton;
+    private MaterialButton deleteButton;
     private LockscreenCredential userCredential;
     private boolean askedForUserCredentials;
 
@@ -34,14 +28,16 @@ public class DuressPasswordMainActivity extends DuressPasswordActivity implement
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        var layout = new GlifRecyclerLayout(this);
-        this.layout = layout;
-        layout.setIcon(getDrawable(R.drawable.ic_lock));
-        layout.setHeaderText(R.string.duress_pwd_pref_title);
-        adjustDescriptionStyle(layout);
-        layout.setDescriptionText(R.string.duress_pwd_description);
+        setTitle(R.string.duress_pwd_pref_title);
+        setContentView(R.layout.duress_password_main);
 
-        setContentView(layout);
+        addButton = requireViewById(R.id.duress_password_add);
+        updateButton = requireViewById(R.id.duress_password_update);
+        deleteButton = requireViewById(R.id.duress_password_delete);
+
+        addButton.setOnClickListener(v -> launchSetup(R.string.duress_pwd_action_add));
+        updateButton.setOnClickListener(v -> launchSetup(R.string.duress_pwd_action_update));
+        deleteButton.setOnClickListener(v -> confirmDelete());
 
         if (savedInstanceState != null) {
             userCredential = savedInstanceState.getParcelable(KEY_USER_CREDENTIAL, LockscreenCredential.class);
@@ -88,61 +84,44 @@ public class DuressPasswordMainActivity extends DuressPasswordActivity implement
             return;
         }
 
-        var g = new ItemGroup();
-
-        if (getLockPatternUtils().hasDuressCredentials(userCredential)) {
-            g.addChild(createItem(R.string.duress_pwd_action_update, R.drawable.ic_edit));
-            g.addChild(createItem(R.string.duress_pwd_action_delete, R.drawable.ic_delete));
-        } else {
-            g.addChild(createItem(R.string.duress_pwd_action_add, R.drawable.ic_add_24dp));
-        }
-
-        var adapter = new RecyclerItemAdapter(g);
-        adapter.setOnItemSelectedListener(this);
-        layout.setAdapter(adapter);
+        boolean hasDuressCredentials = getLockPatternUtils().hasDuressCredentials(userCredential);
+        addButton.setVisibility(hasDuressCredentials ? android.view.View.GONE
+                : android.view.View.VISIBLE);
+        updateButton.setVisibility(hasDuressCredentials ? android.view.View.VISIBLE
+                : android.view.View.GONE);
+        deleteButton.setVisibility(hasDuressCredentials ? android.view.View.VISIBLE
+                : android.view.View.GONE);
     }
 
-    private Item createItem(@StringRes int title, @DrawableRes int icon) {
-        var i = new Item();
-        i.setId(title);
-        i.setTitle(getText(title));
-        i.setIcon(getDrawable(icon));
-        return i;
+    private void launchSetup(int title) {
+        var intent = new Intent(this, DuressPasswordSetupActivity.class);
+        intent.putExtra(DuressPasswordSetupActivity.EXTRA_TITLE_TEXT, title);
+        intent.putExtra(DuressPasswordSetupActivity.EXTRA_USER_CREDENTIAL, userCredential);
+        allowNextOnStop = true;
+        startActivityForResult(intent, REQ_CODE_SETUP);
     }
 
-    // RecyclerItemAdapter.OnItemSelectedListener
-    @Override
-    public void onItemSelected(IItem iitem) {
-        Item item = (Item) iitem;
-        int id = item.getId();
+    private void confirmDelete() {
+        var builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.duress_pwd_action_delete_confirmation);
+        builder.setMessage(R.string.duress_pwd_delete_confirmation_summary);
+        builder.setPositiveButton(R.string.duress_pwd_delete_button, (dialog, which) -> {
+            LockPatternUtils lockPatternUtils = getLockPatternUtils();
+            try {
+                lockPatternUtils.deleteDuressCredentials(userCredential);
+            } catch (Exception e) {
+                Log.e(TAG, "deleteDuressCredentials failed", e);
 
-        if (id == R.string.duress_pwd_action_add || id == R.string.duress_pwd_action_update) {
-            var i = new Intent(this, DuressPasswordSetupActivity.class);
-            i.putExtra(DuressPasswordSetupActivity.EXTRA_TITLE_TEXT, id);
-            i.putExtra(DuressPasswordSetupActivity.EXTRA_USER_CREDENTIAL, userCredential);
-            allowNextOnStop = true;
-            startActivityForResult(i, REQ_CODE_SETUP);
-        } else if (id == R.string.duress_pwd_action_delete) {
-            var b = new AlertDialog.Builder(this);
-            b.setMessage(R.string.duress_pwd_action_delete_confirmation);
-            b.setPositiveButton(R.string.duress_pwd_delete_button, (dialog, which) -> {
-                LockPatternUtils lpu = getLockPatternUtils();
-                try {
-                    lpu.deleteDuressCredentials(userCredential);
-                } catch (Exception e) {
-                    Log.e(TAG, "deleteDuressCredentials failed", e);
-
-                    var d = new AlertDialog.Builder(this);
-                    d.setMessage(getString(R.string.duress_pwd_delete_error, e.toString()));
-                    d.setNeutralButton(R.string.duress_pwd_error_dialog_dismiss, null);
-                    d.show();
-                    return;
-                }
-                updateActionList();
-            });
-            b.setNegativeButton(R.string.duress_pwd_cancel_button, null);
-            b.show();
-        }
+                var errorDialog = new AlertDialog.Builder(this);
+                errorDialog.setMessage(getString(R.string.duress_pwd_delete_error, e.toString()));
+                errorDialog.setNeutralButton(R.string.duress_pwd_error_dialog_dismiss, null);
+                errorDialog.show();
+                return;
+            }
+            updateActionList();
+        });
+        builder.setNegativeButton(R.string.duress_pwd_cancel_button, null);
+        builder.show();
     }
 
     static final int REQ_CODE_OBTAIN_USER_CREDENTIALS = 1;
