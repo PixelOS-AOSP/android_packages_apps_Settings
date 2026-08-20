@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34b93432_e82a78f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000053
+      },
+      "writtenOn": "2026-08-20T04:44:12Z",
+      "side": 1,
+      "message": "fixes wifi password text being too close to qr code",
+      "revId": "123329673fe4d3aa5493aa5300f02e0c37a5c05c",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
