@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dbcd44e4_9c4d8eda",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000014
+      },
+      "writtenOn": "2026-08-21T18:06:01Z",
+      "side": 1,
+      "message": "Works on sunny. Toggle is enabled by default and blur is disabled in UI.",
+      "revId": "5b40611e40a8ec53cca04133a0fe3576f8465fba",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
