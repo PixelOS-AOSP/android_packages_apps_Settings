@@ -1,4 +1,4 @@
-package com.android.settings.development;
+package com.android.settings.applications;
 
 import android.content.Context;
 import android.content.Intent;
@@ -32,7 +32,7 @@ public class KeyboxDataPreference extends Preference {
 
     public KeyboxDataPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setLayoutResource(R.layout.pref_with_delete);
+        setLayoutResource(R.layout.keybox_data_pref);
     }
 
     public void setFilePickerLauncher(ActivityResultLauncher<Intent> launcher) {
@@ -178,7 +178,7 @@ public class KeyboxDataPreference extends Preference {
         }
 
         return numberOfKeyboxes == 1
-                && hasEcdsaKey && hasEcdsaPrivKey && ecdsaCertCount >= 1
-                && hasRsaKey && hasRsaPrivKey && rsaCertCount >= 1;
+                && hasEcdsaKey && hasEcdsaPrivKey && ecdsaCertCount == 3
+                && hasRsaKey && hasRsaPrivKey && rsaCertCount == 3;
     }
 }
