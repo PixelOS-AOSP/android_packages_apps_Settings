@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e8a724e_87feafde",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000199
+      },
+      "writtenOn": "2026-09-24T16:50:58Z",
+      "side": 1,
+      "message": "Pushing on behalf of patch author\u0027s request",
+      "revId": "86b2c8bed2efcb420d13959eff138aeac89e28d5",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    }
+  ]
+}
