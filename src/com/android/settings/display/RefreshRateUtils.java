@@ -19,6 +19,7 @@ package com.android.settings.display;
 import android.content.Context;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.Display;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -104,6 +105,30 @@ public class RefreshRateUtils {
     void setCurrentRefreshRate(int refreshRate) {
         setPeakRefreshRate(refreshRate);
         setMinRefreshRate(isVrrEnabled() ? DEFAULT_MIN_REFRESH_RATE : refreshRate);
+        setPreferredPhysicalRefreshRate(refreshRate);
+    }
+
+    private void setPreferredPhysicalRefreshRate(int refreshRate) {
+        Display display = mContext.getDisplay();
+        if (display.getDisplayId() != Display.DEFAULT_DISPLAY) {
+            return;
+        }
+        Display.Mode currentMode = display.getMode();
+        Display.Mode[] physicalModes = Arrays.stream(display.getSupportedModes())
+                .filter(mode -> mode.getSfModeId() != Display.Mode.INVALID_MODE_ID
+                        && mode.getParentModeId() == Display.Mode.INVALID_MODE_ID
+                        && mode.getPhysicalWidth() == currentMode.getPhysicalWidth()
+                        && mode.getPhysicalHeight() == currentMode.getPhysicalHeight())
+                .toArray(Display.Mode[]::new);
+        boolean hasMultipleBases = Arrays.stream(physicalModes)
+                .mapToInt(mode -> Math.round(mode.getRefreshRate()))
+                .distinct().count() > 1;
+        boolean hasPhysicalMode = Arrays.stream(physicalModes)
+                .anyMatch(mode -> Math.round(mode.getRefreshRate()) == refreshRate);
+        Settings.System.putFloat(mContext.getContentResolver(),
+                Settings.System.USER_PREFERRED_PHYSICAL_REFRESH_RATE,
+                display.hasArrSupport() && hasMultipleBases && hasPhysicalMode
+                        ? refreshRate : 0f);
     }
 
     boolean isVrrPossible() {
