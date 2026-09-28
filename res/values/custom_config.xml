@@ -22,4 +22,7 @@
 
     <!-- Whether to show the search box in the Setup Wizard locale picker. -->
     <bool name="config_show_setuplocalepicker_region_searchbox">true</bool>
+
+    <!-- Whether the face HAL supports the require attention feature -->
+    <bool name="config_face_attention_supported">true</bool>
 </resources>
