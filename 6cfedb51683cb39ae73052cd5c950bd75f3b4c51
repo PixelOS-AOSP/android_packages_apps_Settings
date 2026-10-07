@@ -33,6 +33,24 @@
       "message": "would we need need this? considering that #L107 now never registers for devices that don\u0027t have NFC anymore?",
       "revId": "6cfedb51683cb39ae73052cd5c950bd75f3b4c51",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4bbfb15a_8da42232",
+        "filename": "src/com/android/settings/connecteddevice/NfcAndPaymentFragmentController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-10-07T03:42:54Z",
+      "side": 1,
+      "message": "patch LGTM regardless.",
+      "parentUuid": "f08daf9b_ba812dc8",
+      "revId": "6cfedb51683cb39ae73052cd5c950bd75f3b4c51",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
