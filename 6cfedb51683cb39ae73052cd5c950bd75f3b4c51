@@ -51,6 +51,24 @@
       "parentUuid": "f08daf9b_ba812dc8",
       "revId": "6cfedb51683cb39ae73052cd5c950bd75f3b4c51",
       "serverId": "58543e18-2196-4633-8043-7787712585ad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f22bad8_69865cce",
+        "filename": "src/com/android/settings/connecteddevice/NfcAndPaymentFragmentController.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1000094
+      },
+      "writtenOn": "2026-10-07T06:40:33Z",
+      "side": 1,
+      "message": "Actually i am not sure whether the non NFC device crash or not as i don\u0027t have one. i only have nothing phone 3a NFC is there. but on device which don\u0027t have nfc shouldn\u0027t face this. But again i am not sure as i haven\u0027t tested it out.\n\nIssue:Open Settings -\u003e Connected devices -\u003e Connection preferences -\u003e\n      Bluetooth (or Cast), perform an edge back swipe, hold and reverse\n      to abort the gesture, and Settings will get crashed.\n\nThis what i am trying to solve because of how NFC page is using onResume instead of Start and Stop used by other components under connections preferences.",
+      "parentUuid": "4bbfb15a_8da42232",
+      "revId": "6cfedb51683cb39ae73052cd5c950bd75f3b4c51",
+      "serverId": "58543e18-2196-4633-8043-7787712585ad"
     }
   ]
 }
