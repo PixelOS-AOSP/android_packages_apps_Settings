@@ -650,6 +650,12 @@
             android:title="@string/enable_webapp_minter_title"
             android:summary="@string/enable_webapp_minter_summary" />
 
+        <Preference
+            android:key="spoofing_settings"
+            android:title="@string/spoofing_title"
+            android:summary="@string/spoofing_summary"
+            android:fragment="com.android.settings.development.spoof.SpoofingSettings" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The PixelOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="spoofing_title">Spoofing</string>
+    <string name="spoofing_summary">Play Integrity, device identity, and app overrides</string>
+    <string name="spoofing_integrity_category">Integrity</string>
+    <string name="spoofing_identity_category">Device identity</string>
+    <string name="spoofing_app_specific_category">App-specific overrides</string>
+
+    <string name="tricky_store_title">Attestation</string>
+    <string name="tricky_store_summary">Keybox and target apps for attestation</string>
+    <string name="play_integrity_fix_title">Play Integrity Fix</string>
+    <string name="play_integrity_fix_summary">Fingerprint and build fields served to DroidGuard</string>
+    <string name="spoofing_pixel_props_title">Pixel props</string>
+    <string name="spoofing_pixel_props_summary">Spoof selected apps as a Pixel</string>
+    <string name="spoofing_photos_title">Google Photos</string>
+    <string name="spoofing_photos_summary">Spoof Google Photos as a Pixel XL</string>
+
+    <string name="spoofing_reset_defaults_title">Reset to defaults</string>
+    <string name="spoofing_reset_defaults_dialog_title">Reset spoofing settings?</string>
+    <string name="spoofing_reset_defaults_dialog_message">This clears the Play Integrity config and the security patch override, and restores the default target list. The keybox and the enable switches are kept. A new fingerprint is fetched shortly afterwards.</string>
+    <string name="spoofing_reset_defaults_confirm">Reset</string>
+    <string name="spoofing_reset_defaults_done">Spoofing settings reset</string>
+
+    <string name="pif_no_config">No configuration</string>
+    <string name="pif_active_model">Active: <xliff:g id="model" example="Pixel 6a">%1$s</xliff:g></string>
+    <string name="pif_fetch">Fetch Pixel fingerprint</string>
+    <string name="pif_import">Import configuration</string>
+    <string name="pif_delete">Delete configuration</string>
+    <string name="pif_delete_title">Delete configuration?</string>
+    <string name="pif_delete_message">The saved fingerprint is removed. A new one is fetched shortly afterwards.</string>
+    <string name="pif_imported">Configuration imported</string>
+    <string name="pif_fetched_model">Fetched fingerprint for <xliff:g id="model" example="Pixel 6a">%1$s</xliff:g></string>
+    <string name="pif_wipe_playstore_title">Clear Play Store data?</string>
+    <string name="pif_wipe_playstore_message">Applying this fingerprint works best with a fresh Play Store session. Clear Play Store app data now? This signs you out and clears its local cache and download queue.</string>
+    <string name="pif_wipe_confirm">Clear data</string>
+    <string name="pif_failed">Failed: <xliff:g id="error" example="timeout">%1$s</xliff:g></string>
+    <string name="pif_invalid_fingerprint">Invalid fingerprint format</string>
+    <string name="pif_no_devices">No devices found</string>
+    <string name="pif_select_device">Select device</string>
+    <string name="pif_recommended">Recommended</string>
+    <string name="pif_advanced">Advanced spoofing</string>
+    <string name="pif_spoof_build_title">Spoof build fields</string>
+    <string name="pif_spoof_build_summary">Present the fingerprint Build fields to DroidGuard</string>
+    <string name="pif_spoof_props_title">Spoof system properties</string>
+    <string name="pif_spoof_props_summary">Present the fingerprint build id, patch, and product identity to DroidGuard</string>
+    <string name="pif_spoof_provider_title">Spoof keystore provider</string>
+    <string name="pif_spoof_provider_summary">Fail DroidGuard certificate-chain requests. Leave off when a keybox is in use</string>
+    <string name="pif_spoof_signature_title">Spoof ROM signature</string>
+    <string name="pif_spoof_signature_summary">Experimental signature presented to DroidGuard</string>
+    <string name="pif_vending_finger_title">Play Store fingerprint</string>
+    <string name="pif_vending_finger_summary">Also present the fingerprint to the Play Store. Leave off unless you need it</string>
+    <string name="pif_vending_finger_custom">Custom Play Store fingerprint: <xliff:g id="fingerprint" example="google/bluejay/...">%1$s</xliff:g></string>
+    <string name="pif_vending_sdk_title">Spoof Play Store SDK</string>
+    <string name="pif_vending_sdk_summary">Present SDK 32 to the Play Store. Never raised above the real SDK. Leave off unless testing</string>
+    <string name="pif_fields">Fingerprint fields</string>
+    <string name="pif_edit_value">Edit <xliff:g id="field" example="MODEL">%1$s</xliff:g></string>
+    <string name="pif_value_empty">Value cannot be empty</string>
+    <string name="pif_value_integer">Must be an integer</string>
+
+    <string name="ts_no_keybox">No keybox installed</string>
+    <string name="ts_keybox_installed">Keybox installed</string>
+    <string name="ts_keybox_user">Keybox imported by you</string>
+    <string name="ts_import_keybox">Import keybox</string>
+    <string name="ts_delete_keybox">Delete keybox</string>
+    <string name="ts_delete_keybox_title">Delete keybox?</string>
+    <string name="ts_delete_keybox_message">The installed keybox is removed. An official one can be fetched again.</string>
+    <string name="ts_keybox_imported">Keybox imported</string>
+    <string name="ts_wipe_playstore_message">Play Store caches integrity verdicts. Clear its data now so the new keybox takes effect? This signs you out and clears its local cache and download queue.</string>
+    <string name="ts_keybox_deleted">Keybox deleted</string>
+    <string name="ts_targets">Target apps</string>
+    <string name="spoof_target_count"><xliff:g id="count" example="8">%1$d</xliff:g> apps</string>
+    <string name="ts_import_targets">Import target list</string>
+    <string name="ts_targets_imported">Target list imported</string>
+    <string name="ts_patch">Security patch override</string>
+    <string name="ts_patch_summary_unset">Not set. Attestation uses the device patch</string>
+    <string name="ts_patch_stale"><xliff:g id="date" example="2024-01-01">%1$s</xliff:g> (older than a year)</string>
+    <string name="ts_patch_custom">Per-package patch</string>
+    <string name="ts_patch_invalid">Use YYYY-MM-DD, a YYYY-MM-05 template, or per-package blocks</string>
+    <string name="ts_failed">Failed: <xliff:g id="error" example="timeout">%1$s</xliff:g></string>
+    <string name="ts_choose_mode">Target mode</string>
+    <string name="ts_mode_off">Not targeted</string>
+    <string name="ts_mode_auto">Auto</string>
+    <string name="ts_mode_leaf">Leaf hack</string>
+    <string name="ts_mode_cert">Certificate generation</string>
+    <string name="ts_mode_skip">Skip</string>
+
+    <string name="pp_enable">Spoof Pixel props</string>
+    <string name="pp_model">Spoof as</string>
+    <string name="pp_targets">Target apps</string>
+
+    <string name="spoof_show_system">Show system apps</string>
+    <string name="spoof_filter">Filter</string>
+    <string name="spoof_no_apps">No matching apps</string>
+</resources>
