@@ -19,6 +19,7 @@ package com.android.settings.development.spoof;
 import android.app.settings.SettingsEnums;
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.os.SystemProperties;
 import android.provider.Settings;
 
 import androidx.appcompat.app.AlertDialog;
@@ -38,6 +39,7 @@ import org.json.JSONObject;
 @SearchIndexable
 public class SpoofingSettings extends DashboardFragment implements DeveloperOptionAwareMixin {
     private static final String TAG = "SpoofingSettings";
+    private static final String DISABLE_GMS_PROPS = "persist.sys.pihooks.disable.gms_props";
 
     @Override
     public int getMetricsCategory() {
@@ -60,6 +62,7 @@ public class SpoofingSettings extends DashboardFragment implements DeveloperOpti
         ContentResolver cr = requireContext().getContentResolver();
         bindSystemSwitch(cr, "spoof_trickystore_enabled", SpoofStore.TRICKY_ENABLED);
         bindSystemSwitch(cr, "spoof_pif_enabled", SpoofStore.PIF_ENABLED);
+        bindGmsPropsSwitch();
         bindSecureSwitch(cr, "pi_photos_spoof", Settings.Secure.PI_PHOTOS_SPOOF,
                 "com.google.android.apps.photos");
 
@@ -78,6 +81,7 @@ public class SpoofingSettings extends DashboardFragment implements DeveloperOpti
         ContentResolver cr = requireContext().getContentResolver();
         refreshSystemSwitch("spoof_trickystore_enabled", SpoofStore.TRICKY_ENABLED, 1);
         refreshSystemSwitch("spoof_pif_enabled", SpoofStore.PIF_ENABLED, 1);
+        refreshGmsPropsSwitch();
         refreshSecureSwitch("pi_photos_spoof", Settings.Secure.PI_PHOTOS_SPOOF, 1);
         updateStatus(cr);
     }
@@ -103,6 +107,27 @@ public class SpoofingSettings extends DashboardFragment implements DeveloperOpti
                 tricky.setSummary(R.string.ts_keybox_installed);
             }
         }
+    }
+
+    private void bindGmsPropsSwitch() {
+        SwitchPreferenceCompat pref = findPreference("certified_props");
+        if (pref == null) return;
+        pref.setOnPreferenceChangeListener((p, value) -> {
+            boolean spoofOn = Boolean.TRUE.equals(value);
+            try {
+                SystemProperties.set(DISABLE_GMS_PROPS, spoofOn ? "false" : "true");
+            } catch (RuntimeException e) {
+                return false;
+            }
+            SpoofStore.stopGms(requireContext());
+            return true;
+        });
+    }
+
+    private void refreshGmsPropsSwitch() {
+        SwitchPreferenceCompat pref = findPreference("certified_props");
+        if (pref == null) return;
+        pref.setChecked(!SystemProperties.getBoolean(DISABLE_GMS_PROPS, false));
     }
 
     private void bindSystemSwitch(ContentResolver cr, String prefKey, String setting) {

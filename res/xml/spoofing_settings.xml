@@ -23,6 +23,12 @@
         android:key="spoofing_integrity_category"
         android:title="@string/spoofing_integrity_category">
 
+        <SwitchPreferenceCompat
+            android:key="certified_props"
+            android:title="@string/cert_overlay_title"
+            android:summary="@string/cert_overlay_summary"
+            android:persistent="false" />
+
         <com.android.settingslib.PrimarySwitchPreference
             android:key="spoof_trickystore_enabled"
             android:title="@string/tricky_store_title"

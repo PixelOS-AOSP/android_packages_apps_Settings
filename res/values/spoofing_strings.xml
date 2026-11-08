@@ -18,6 +18,8 @@
     <string name="spoofing_title">Spoofing</string>
     <string name="spoofing_summary">Play Integrity, device identity, and app overrides</string>
     <string name="spoofing_integrity_category">Integrity</string>
+    <string name="cert_overlay_title">Spoof certified properties</string>
+    <string name="cert_overlay_summary">Build fields for Play Services and the Play Store. Play Services restarts when this changes</string>
     <string name="spoofing_identity_category">Device identity</string>
     <string name="spoofing_app_specific_category">App-specific overrides</string>
 
