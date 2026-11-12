@@ -420,6 +420,7 @@
     <string name="play_integrity_fix_summary">Fingerprint and build fields served to DroidGuard</string>
     <string name="spoofing_pixel_props_title">Pixel props</string>
     <string name="spoofing_pixel_props_summary">Spoof selected apps as a Pixel</string>
+    <string name="pixel_props_fetch_catalog">Fetch a fingerprint catalog first. The model list comes from that catalog.</string>
     <string name="spoofing_photos_title">Google Photos</string>
     <string name="spoofing_photos_summary">Spoof Google Photos as a Pixel XL</string>
     <string name="spoofing_reset_defaults_title">Reset to defaults</string>
@@ -429,6 +430,9 @@
     <string name="spoofing_reset_defaults_done">Spoofing settings reset</string>
     <string name="pif_no_config">No configuration</string>
     <string name="pif_active_model">Active: <xliff:g id="model" example="Pixel 6a">%1$s</xliff:g></string>
+    <string name="pif_catalog_repo_title">Fingerprint catalog</string>
+    <string name="pif_catalog_repo_summary">GitHub repository, as owner/name. Empty uses PixelOS-17/pixel_catalog. The file is main/catalog.json.</string>
+    <string name="pif_catalog_repo_invalid">Enter a GitHub repository as owner/name</string>
     <string name="pif_fetch">Fetch Pixel fingerprint</string>
     <string name="pif_import">Import configuration</string>
     <string name="pif_delete">Delete configuration</string>

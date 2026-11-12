@@ -27,6 +27,7 @@ import android.widget.Toast;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
+import androidx.preference.EditTextPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.SwitchPreferenceCompat;
@@ -79,6 +80,7 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         super.onCreatePreferences(savedInstanceState, rootKey);
+        bindCatalogRepo();
         Preference fetch = findPreference("pif_fetch");
         if (fetch != null) {
             fetch.setOnPreferenceClickListener(p -> {
@@ -273,21 +275,57 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
         }
     }
 
+    private void bindCatalogRepo() {
+        EditTextPreference repo = findPreference("pif_catalog_repo");
+        if (repo == null) return;
+        repo.setOnBindEditTextListener(edit -> edit.setSingleLine(true));
+        repo.setOnPreferenceChangeListener((p, value) -> {
+            String text = value == null ? "" : String.valueOf(value).trim();
+            if (!text.isEmpty()) {
+                try {
+                    text = PixelDeviceRepository.normalizeCatalogRepo(text);
+                } catch (IllegalArgumentException ex) {
+                    toast(getString(R.string.pif_catalog_repo_invalid));
+                    return false;
+                }
+            }
+            repo.setText(text);
+            applyRepoSummary(repo, text);
+            return false;
+        });
+        applyRepoSummary(repo, repo.getText());
+    }
+
+    private void applyRepoSummary(EditTextPreference repo, String text) {
+        if (text == null || text.trim().isEmpty()) {
+            repo.setSummary(R.string.pif_catalog_repo_summary);
+        } else {
+            repo.setSummary(text.trim());
+        }
+    }
+
+    private String catalogRepo() {
+        EditTextPreference repo = findPreference("pif_catalog_repo");
+        if (repo == null || repo.getText() == null) return "";
+        return repo.getText().trim();
+    }
+
     private void fetchProfiles() {
         if (mFetching || !isAdded()) return;
         mFetching = true;
         Preference fetch = findPreference("pif_fetch");
         if (fetch != null) fetch.setEnabled(false);
-        android.content.Context context = requireContext();
+        String repo = catalogRepo();
+        android.content.Context context = getContext();
         new Thread(() -> {
-            List<PixelDeviceRepository.PixelProfile> profiles = null;
+            PixelDeviceRepository.Catalog catalog = null;
             Exception error = null;
             try {
-                profiles = PixelDeviceRepository.getProfiles(context, true);
+                catalog = PixelDeviceRepository.fetchPifCatalog(context, repo);
             } catch (Exception e) {
                 error = e;
             }
-            List<PixelDeviceRepository.PixelProfile> result = profiles;
+            PixelDeviceRepository.Catalog result = catalog;
             Exception failure = error;
             android.app.Activity activity = getActivity();
             if (activity == null) {
@@ -302,12 +340,13 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
                             failure.getMessage() == null ? "error" : failure.getMessage()));
                     return;
                 }
-                showProfiles(result);
+                showProfiles(result.profiles, result.defaultCodename, result.generationOrder);
             });
         }, "pif-fetch").start();
     }
 
-    private void showProfiles(List<PixelDeviceRepository.PixelProfile> profiles) {
+    private void showProfiles(List<PixelDeviceRepository.PixelProfile> profiles,
+            String defaultCodename, List<String> generationOrder) {
         mFetching = false;
         Preference fetch = findPreference("pif_fetch");
         if (fetch != null) fetch.setEnabled(true);
@@ -316,7 +355,12 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
             toast(getString(R.string.pif_no_devices));
             return;
         }
-        String recommended = PixelDeviceRepository.getDefaultPifCodename(profiles);
+        String recommended = PixelDeviceRepository.getDefaultPifCodename(
+                profiles, defaultCodename, generationOrder);
+        if (recommended == null) {
+            toast(getString(R.string.pif_no_devices));
+            return;
+        }
         String[] labels = new String[profiles.size()];
         int checked = 0;
         for (int i = 0; i < profiles.size(); i++) {

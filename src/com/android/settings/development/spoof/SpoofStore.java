@@ -212,8 +212,8 @@ final class SpoofStore {
         out.put("DEVICE", profile.device);
         out.put("FINGERPRINT", profile.fingerprint);
         out.put("SECURITY_PATCH", profile.securityPatch);
-        out.put("DEVICE_INITIAL_SDK_INT",
-                PixelDeviceRepository.getInitialSdkInt(profile.device));
+        String initialSdk = PixelDeviceRepository.sdkForProfile(profile);
+        if (initialSdk != null) out.put("DEVICE_INITIAL_SDK_INT", initialSdk);
         if (profile.isCanary && profile.securityPatch != null && profile.securityPatch.length() >= 7) {
             out.put("_canary_month", profile.securityPatch.substring(0, 7));
         }

@@ -26,6 +26,13 @@
         android:persistent="false"
         android:selectable="false" />
 
+    <EditTextPreference
+        android:key="pif_catalog_repo"
+        android:title="@string/pif_catalog_repo_title"
+        android:summary="@string/pif_catalog_repo_summary"
+        android:persistent="true"
+        android:dialogTitle="@string/pif_catalog_repo_title" />
+
     <Preference
         android:key="pif_fetch"
         android:title="@string/pif_fetch"

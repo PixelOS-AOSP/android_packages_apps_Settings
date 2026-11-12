@@ -67,34 +67,49 @@ public class PixelPropsSettings extends DashboardFragment implements DeveloperOp
                 return true;
             });
         }
+        bindModel();
+    }
+
+    private void bindModel() {
         ListPreference model = findPreference("pi_pp_model");
-        if (model != null) {
-            List<String> order = new ArrayList<>(PixelDeviceRepository.PICKER_ORDER);
-            String stored = SpoofStore.getString(cr, SpoofStore.PP_MODEL);
-            if (stored != null && !stored.isEmpty() && !order.contains(stored)) {
-                order.add(stored);
-            }
-            String[] values = order.toArray(new String[0]);
-            String[] labels = new String[values.length];
-            for (int i = 0; i < values.length; i++) {
-                String name = PixelDeviceRepository.DEVICE_MODEL_MAP.get(values[i]);
-                labels[i] = name == null ? values[i] : name;
-            }
-            model.setEntries(labels);
-            model.setEntryValues(values);
-            String current = (stored == null || stored.isEmpty())
-                    ? PixelDeviceRepository.getDefaultPhoneCodename()
-                    : stored;
-            model.setValue(current);
-            model.setSummary(labelFor(current));
-            model.setOnPreferenceChangeListener((p, value) -> {
-                String codename = String.valueOf(value);
-                SpoofStore.putString(cr, SpoofStore.PP_MODEL, codename);
-                model.setSummary(labelFor(codename));
-                stopTargets(cr);
-                return true;
-            });
+        if (model == null) return;
+        android.content.Context context = requireContext();
+        ContentResolver cr = context.getContentResolver();
+        List<String> order = new ArrayList<>(PixelDeviceRepository.pickerOrder(context));
+        if (order.isEmpty()) {
+            model.setEnabled(false);
+            model.setEntries(new String[0]);
+            model.setEntryValues(new String[0]);
+            model.setSummary(R.string.pixel_props_fetch_catalog);
+            return;
         }
+        model.setEnabled(true);
+        model.setOnPreferenceChangeListener(null);
+        String stored = SpoofStore.getString(cr, SpoofStore.PP_MODEL);
+        if (stored != null && !stored.isEmpty() && !order.contains(stored)) {
+            order.add(stored);
+        }
+        String[] values = order.toArray(new String[0]);
+        String[] labels = new String[values.length];
+        for (int i = 0; i < values.length; i++) {
+            String name = PixelDeviceRepository.modelName(context, values[i]);
+            labels[i] = name == null ? values[i] : name;
+        }
+        model.setEntries(labels);
+        model.setEntryValues(values);
+        String current = (stored == null || stored.isEmpty())
+                ? PixelDeviceRepository.getDefaultPhoneCodename(context)
+                : stored;
+        if (current == null) current = values[0];
+        model.setValue(current);
+        model.setSummary(labelFor(current));
+        model.setOnPreferenceChangeListener((p, value) -> {
+            String codename = String.valueOf(value);
+            SpoofStore.putString(cr, SpoofStore.PP_MODEL, codename);
+            model.setSummary(labelFor(codename));
+            stopTargets(cr);
+            return true;
+        });
     }
 
     @Override
@@ -105,10 +120,11 @@ public class PixelPropsSettings extends DashboardFragment implements DeveloperOp
             enabled.setChecked(SpoofStore.getInt(requireContext().getContentResolver(), false,
                     Settings.Secure.PI_PP_SPOOF, 1) != 0);
         }
+        bindModel();
     }
 
-    private static String labelFor(String codename) {
-        String name = PixelDeviceRepository.DEVICE_MODEL_MAP.get(codename);
+    private String labelFor(String codename) {
+        String name = PixelDeviceRepository.modelName(requireContext(), codename);
         return name == null ? codename : name;
     }
 
