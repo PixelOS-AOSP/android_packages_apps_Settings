@@ -458,7 +458,8 @@
     <string name="pif_spoof_signature_title">Spoof ROM signature</string>
     <string name="pif_spoof_signature_summary">Experimental signature presented to DroidGuard</string>
     <string name="pif_vending_finger_title">Play Store fingerprint</string>
-    <string name="pif_vending_finger_summary">Also present the fingerprint to the Play Store. Leave off unless you need it</string>
+    <string name="pif_vending_finger_summary">Also present the fingerprint to the Play Store. Clear Play Store data after changing this</string>
+    <string name="pif_vending_finger_wipe_message">Play Store keeps the previous fingerprint in its data. Clear Play Store data for this change to take effect? This signs you out and clears its local cache and download queue.</string>
     <string name="pif_vending_finger_custom">Custom Play Store fingerprint: <xliff:g id="fingerprint" example="google/bluejay/...">%1$s</xliff:g></string>
     <string name="pif_vending_sdk_title">Spoof Play Store SDK</string>
     <string name="pif_vending_sdk_summary">Present SDK 32 to the Play Store. Never raised above the real SDK. Leave off unless testing</string>

@@ -115,6 +115,8 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
         if (finger != null) {
             finger.setOnPreferenceChangeListener((p, value) -> {
                 writeRaw(KEY_VENDING_FINGER, Boolean.TRUE.equals(value) ? "1" : "0", false);
+                SpoofStore.confirmClearPlayStore(requireContext(),
+                        R.string.pif_vending_finger_wipe_message);
                 return true;
             });
         }
