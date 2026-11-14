@@ -49,6 +49,7 @@ import java.util.List;
 @SearchIndexable
 public class PifSettings extends DashboardFragment implements DeveloperOptionAwareMixin {
     private static final String TAG = "PifSettings";
+    private static final String KEY_VENDING_FINGER = "spoofVendingFinger";
     private static final String[] FLAGS = {
             "spoofBuild", "spoofProps", "spoofProvider", "spoofSignature",
     };
@@ -110,10 +111,10 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
                 return true;
             });
         }
-        SwitchPreferenceCompat finger = findPreference("spoofVendingFinger");
+        SwitchPreferenceCompat finger = findPreference(KEY_VENDING_FINGER);
         if (finger != null) {
             finger.setOnPreferenceChangeListener((p, value) -> {
-                writeRaw("spoofVendingFinger", Boolean.TRUE.equals(value) ? "1" : "0", false);
+                writeRaw(KEY_VENDING_FINGER, Boolean.TRUE.equals(value) ? "1" : "0", false);
                 return true;
             });
         }
@@ -149,14 +150,15 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
             pref.setEnabled(hasConfig);
             pref.setChecked(SpoofStore.flagOn(config, FLAGS[i], FLAG_DEFAULTS[i]));
         }
-        String finger = config.optString("spoofVendingFinger", "0");
-        SwitchPreferenceCompat fingerPref = findPreference("spoofVendingFinger");
+        String finger = config.optString(KEY_VENDING_FINGER, "");
+        SwitchPreferenceCompat fingerPref = findPreference(KEY_VENDING_FINGER);
         if (fingerPref != null) {
             fingerPref.setEnabled(hasConfig);
-            boolean custom = !finger.isEmpty() && !"0".equals(finger) && !"1".equals(finger)
+            boolean unset = !config.has(KEY_VENDING_FINGER) || finger.isEmpty();
+            boolean custom = !unset && !"0".equals(finger) && !"1".equals(finger)
                     && !"true".equalsIgnoreCase(finger) && !"false".equalsIgnoreCase(finger);
-            fingerPref.setChecked(!"0".equals(finger) && !"false".equalsIgnoreCase(finger)
-                    && !finger.isEmpty());
+            fingerPref.setChecked(unset ? defaultVendingFinger()
+                    : !"0".equals(finger) && !"false".equalsIgnoreCase(finger));
             fingerPref.setSummary(custom
                     ? getString(R.string.pif_vending_finger_custom, finger)
                     : getString(R.string.pif_vending_finger_summary));
@@ -398,6 +400,11 @@ public class PifSettings extends DashboardFragment implements DeveloperOptionAwa
         } catch (JSONException e) {
             toast(getString(R.string.pif_failed, e.getMessage()));
         }
+    }
+
+    private boolean defaultVendingFinger() {
+        return getResources().getBoolean(
+                com.android.internal.R.bool.config_defaultSpoofPlayStoreFingerprint);
     }
 
     private void toast(String message) {
